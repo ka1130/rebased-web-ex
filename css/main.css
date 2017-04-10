@@ -44,6 +44,18 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Thin.eot');
+	src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Thin.woff2') format('woff2'),
+		url('../fonts/Roboto-Thin.woff') format('woff'),
+		url('../fonts/Roboto-Thin.ttf') format('truetype'),
+		url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
 /* General Rules */
 
 body {
@@ -61,23 +73,41 @@ body > header {
   background-color: #fff;
   display: flex;
   justify-content: text-between;
-}
-
-nav > ul > li {
-  display: none;
+	position: relative;
 }
 
 nav:before {
 	content:"☰";
 	font-size: 3rem;
 	position: absolute;
-	right: 2rem;;
+	right: 2rem;
 	top: 1.75rem;
+	cursor: pointer;
 }
 
-a {
+
+nav ul {
+	height: calc(100vh - 7.9rem);
+	width: 100vw;
+	list-style-type: none;
+	position: absolute;
+	top: 7.9rem;
+	right: 0;
+	background-color: #212121;
+}
+
+
+nav > ul > li {
+
+}
+
+nav > ul > li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
+	font-weight: 100;
+	margin-left: 4rem;
+	font-size: 1.8rem;
+	line-height: 350%;
 }
 
 h1 {

@@ -82,13 +82,25 @@
 
 @font-face {
 	font-family: 'Montserrat';
-	src: url('../fonts/ontserrat-Bold.eot');
+	src: url('../fonts/Montserrat-Bold.eot');
 	src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/Montserrat-Bold.woff2') format('woff2'),
 		url('../fonts/Montserrat-Bold.woff') format('woff'),
 		url('../fonts/Montserrat-Bold.ttf') format('truetype'),
 		url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
 	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.eot');
+	src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Light.woff2') format('woff2'),
+		url('../fonts/Montserrat-Light.woff') format('woff'),
+		url('../fonts/Montserrat-Light.ttf') format('truetype'),
+		url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+	font-weight: 300;
 	font-style: normal;
 }
 
@@ -103,13 +115,10 @@ body {
 }
 
 /* Header */
-
-body > header {
+main > header {
   width: 100%;
   max-width: 1500px;
   background-color: #fff;
-  display: flex;
-  justify-content: text-between;
 	position: fixed;
 }
 
@@ -172,17 +181,21 @@ h1 img {
 }
 
 /* Section 1 */
+main > section:nth-child(2) {
 
-main > section:first-of-type > p:first-of-type{
-	padding: 10rem 0 0 2rem;
-	font-size: 3.5rem;
+}
+
+main p:first-of-type{
+	font-family: 'Montserrat';
+	font-size: 3rem;
 	color: #fff;
 	text-transform: uppercase;
 }
 
 main > section:first-of-type > p:nth-of-type(2){
+	font-family: 'Montserrat';
 	padding: 0 2rem;
-	font-size: 2rem;
+	font-size: 1.55rem;
 	color: #fff;
 }
 

@@ -68,11 +68,35 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+		url('../fonts/Montserrat-Regular.woff') format('woff'),
+		url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+		url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/ontserrat-Bold.eot');
+	src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+		url('../fonts/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+		url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
 /* General Rules */
 
 body {
   background: url("../img/header.png") no-repeat;
-  background-size: 100%;
+  /*background-size: 100%;*/
 	background-position-y: 10rem;
   margin: 0 auto;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;  
@@ -150,10 +174,16 @@ h1 img {
 /* Section 1 */
 
 main > section:first-of-type > p:first-of-type{
-	padding: 10rem 2rem;
+	padding: 10rem 0 0 2rem;
 	font-size: 3.5rem;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+main > section:first-of-type > p:nth-of-type(2){
+	padding: 0 2rem;
+	font-size: 2rem;
+	color: #fff;
 }
 
 

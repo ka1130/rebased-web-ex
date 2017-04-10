@@ -87,7 +87,7 @@ nav:before {
 
 
 nav ul {
-	height: calc(100vh - 7.9rem);
+	height: 0;
 	width: 100vw;
 	list-style-type: none;
 	position: absolute;
@@ -97,9 +97,9 @@ nav ul {
 }
 
 
-nav > ul > li {
+/*nav > ul > li {
 
-}
+}*/
 
 nav > ul > li a {
   text-decoration: none;

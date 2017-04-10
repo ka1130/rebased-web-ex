@@ -56,11 +56,24 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Black.eot');
+	src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Black.woff2') format('woff2'),
+		url('../fonts/Roboto-Black.woff') format('woff'),
+		url('../fonts/Roboto-Black.ttf') format('truetype'),
+		url('../fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
 /* General Rules */
 
 body {
   background: url("../img/header.png") no-repeat;
-  background-size: contain;
+  background-size: 100%;
+	background-position-y: 10rem;
   margin: 0 auto;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;  
 }
@@ -73,7 +86,7 @@ body > header {
   background-color: #fff;
   display: flex;
   justify-content: text-between;
-	position: relative;
+	position: fixed;
 }
 
 nav:before {
@@ -132,6 +145,15 @@ h1 img {
 		nav:before {
 				content:"";
 		}
+}
+
+/* Section 1 */
+
+main > section:first-of-type > p:first-of-type{
+	padding: 10rem 2rem;
+	font-size: 3.5rem;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 

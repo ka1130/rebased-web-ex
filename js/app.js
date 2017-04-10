@@ -1,6 +1,8 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function (event) {
 
+    // Hamburger Menu
+
     const hamburger = document.getElementsByTagName("nav")[0];
     const menuList = hamburger.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
@@ -21,6 +23,8 @@
     }
 
     hamburger.addEventListener("click", openCloseNav, false);
+
+    // 
 
   });
 })();

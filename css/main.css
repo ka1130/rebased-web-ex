@@ -60,23 +60,19 @@ body > header {
   max-width: 1500px;
   background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: text-between;
 }
-
-
 
 nav > ul > li {
-  display: inline-block;
-  padding: 2.5rem 1.5rem;
-  font-size: 1.5rem;
+  display: none;
 }
 
-@media screen and (min-width: 1487px) {
-    nav > ul > li {
-      display: inline-block;
-      padding: 2.5rem 1.5rem;
-      font-size: 1.5rem;
-    }
+nav:before {
+	content:"☰";
+	font-size: 3rem;
+	position: absolute;
+	right: 2rem;;
+	top: 1.75rem;
 }
 
 a {
@@ -85,7 +81,26 @@ a {
 }
 
 h1 {
-    padding: 2.5rem;
+    padding: 2rem;
 }
+
+h1 img {
+	width: 17rem;
+	height: auto;
+	margin-top: .3rem;
+}
+
+@media screen and (min-width: 1487px) {
+    nav > ul > li {
+      display: inline-block;
+      padding: 2.5rem 1.5rem;
+      font-size: 1.5rem;
+    }
+		nav:before {
+				content:"";
+		}
+}
+
+
 
 

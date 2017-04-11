@@ -4,10 +4,8 @@
     // Hamburger Menu
 
     const nav = document.getElementsByTagName("nav")[0];
-    const hamburger = window.getComputedStyle(document.getElementsByTagName("nav")[0], ":before").getPropertyValue("content");
     const menuList = nav.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
-    console.log(hamburger);
 
     function openCloseNav(event) {
 

@@ -10,27 +10,16 @@
 
 @font-face {
 	font-family: 'Roboto';
-	src: url('../fonts/Roboto-Regular.eot');
-	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto-Regular.woff2') format('woff2'),
-		url('../fonts/Roboto-Regular.woff') format('woff'),
-		url('../fonts/Roboto-Regular.ttf') format('truetype'),
-		url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
-	font-weight: normal;
+	src: url('../fonts/Roboto-Thin.eot');
+	src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Thin.woff2') format('woff2'),
+		url('../fonts/Roboto-Thin.woff') format('woff'),
+		url('../fonts/Roboto-Thin.ttf') format('truetype'),
+		url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+	font-weight: 100;
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Roboto';
-	src: url('../fonts/Roboto-Bold.eot');
-	src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto-Bold.woff2') format('woff2'),
-		url('../fonts/Roboto-Bold.woff') format('woff'),
-		url('../fonts/Roboto-Bold.ttf') format('truetype'),
-		url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
 
 @font-face {
 	font-family: 'Roboto';
@@ -44,17 +33,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Roboto';
-	src: url('../fonts/Roboto-Thin.eot');
-	src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Roboto-Thin.woff2') format('woff2'),
-		url('../fonts/Roboto-Thin.woff') format('woff'),
-		url('../fonts/Roboto-Thin.ttf') format('truetype'),
-		url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
-	font-weight: 100;
-	font-style: normal;
-}
 
 @font-face {
 	font-family: 'Roboto';
@@ -65,6 +43,30 @@
 		url('../fonts/Roboto-Black.ttf') format('truetype'),
 		url('../fonts/Roboto-Black.svg#Roboto-Black') format('svg');
 	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-ExtraLight.eot');
+	src: url('../fonts/Montserrat-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+		url('../fonts/Montserrat-ExtraLight.woff') format('woff'),
+		url('../fonts/Montserrat-ExtraLight.ttf') format('truetype'),
+		url('../fonts/Montserrat-ExtraLight.svg#Montserrat-ExtraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.eot');
+	src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Light.woff2') format('woff2'),
+		url('../fonts/Montserrat-Light.woff') format('woff'),
+		url('../fonts/Montserrat-Light.ttf') format('truetype'),
+		url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+	font-weight: 300;
 	font-style: normal;
 }
 
@@ -92,30 +94,21 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Light.eot');
-	src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Montserrat-Light.woff2') format('woff2'),
-		url('../fonts/Montserrat-Light.woff') format('woff'),
-		url('../fonts/Montserrat-Light.ttf') format('truetype'),
-		url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
-
 /* General Rules */
 
 body {
   background: url("../img/header.png") no-repeat;
-  /*background-size: 100%;*/
-	background-position-y: 10rem;
+  background-position-y: 7rem;
+	background-size: 380%;
   margin: 0 auto;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;  
+	padding-top: -8rem;
+	min-height: 100vh; 
 }
 
 /* Header */
-main > header {
+
+body > header {
   width: 100%;
   max-width: 1500px;
   background-color: #fff;
@@ -131,7 +124,6 @@ nav:before {
 	cursor: pointer;
 }
 
-
 nav ul {
 	height: 0;
 	width: 100vw;
@@ -142,11 +134,6 @@ nav ul {
 	background-color: #212121;
 	transition: 0.5s;
 }
-
-
-/*nav > ul > li {
-
-}*/
 
 nav > ul > li a {
   text-decoration: none;
@@ -160,7 +147,7 @@ nav > ul > li a {
 }
 
 h1 {
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 h1 img {
@@ -181,22 +168,105 @@ h1 img {
 }
 
 /* Section 1 */
-main > section:nth-child(2) {
 
+main {
+	padding-top: 8rem;
 }
 
 main p:first-of-type{
 	font-family: 'Montserrat';
 	font-size: 3rem;
+	font-weight: 300;
 	color: #fff;
 	text-transform: uppercase;
+	padding: 3rem 0 1.5rem 2rem;
+	line-height: 100%;
 }
 
 main > section:first-of-type > p:nth-of-type(2){
 	font-family: 'Montserrat';
 	padding: 0 2rem;
-	font-size: 1.55rem;
+	font-size: 1.6rem;
 	color: #fff;
+}
+
+main > section > aside > header {
+	font-family: 'Montserrat';
+	padding: 2.5rem 0 0 2rem;
+	font-size: 2.25rem;
+	font-weight: 300;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	line-height: 2.25rem;
+}
+
+main > section > aside > header:after {
+	content: "";
+	width: 3rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	top: 8.4rem;
+	left: 2.2rem;
+}
+
+main > section > aside > form {
+	margin: 3rem 2rem 0 2rem;
+}
+
+main > section > aside > form > header {
+	font-family: 'Montserrat';
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+fieldset {
+	border: none;
+}
+
+main > section > aside > form > fieldset {
+	margin-top: 1.5rem;
+}
+
+main > section > aside > form input[type="text"] {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	margin-top: 1rem;
+	border: none;	
+	line-height:normal;
+}
+
+main > section > aside > form input[type="text"]::-webkit-input-placeholder { 
+	font-family: 'Roboto';
+  font-weight: 100;
+	color: #666;
+	font-size: 1.5rem;
+	padding-left: 1rem;	
+}
+
+main > section > aside > form input[type="text"]::-moz-placeholder { 
+	font-family: 'Roboto';
+  font-weight: 100;
+	color: #666;
+	font-size: 1.5rem;
+	padding-left: 1rem;	
+}
+main > section > aside > form input[type="text"]:-ms-input-placeholder { 
+	font-family: 'Roboto';
+  font-weight: 100;
+	color: #666;
+	font-size: 1.5rem;
+	padding-left: 1rem;	
+}
+main > section > aside > form input[type="text"]:-moz-placeholder { 
+	font-family: 'Roboto';
+  font-weight: 100;
+	color: #666;
+	font-size: 1.5rem;
+	padding-left: 1rem;	
 }
 
 

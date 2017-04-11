@@ -3,11 +3,14 @@
 
     // Hamburger Menu
 
-    const hamburger = document.getElementsByTagName("nav")[0];
-    const menuList = hamburger.firstElementChild;
+    const nav = document.getElementsByTagName("nav")[0];
+    const hamburger = window.getComputedStyle(document.getElementsByTagName("nav")[0], ":before").getPropertyValue("content");
+    const menuList = nav.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
+    console.log(hamburger);
 
     function openCloseNav(event) {
+
       if (menuList.style.height == "0px") {
         menuList.style.height = "calc(100vh - 7.9rem)";
         for (let i = 0; i < listItems.length; i++) {
@@ -22,7 +25,8 @@
       }
     }
 
-    hamburger.addEventListener("click", openCloseNav, false);
+    nav.addEventListener("click", openCloseNav, false);
+
 
     // 
 

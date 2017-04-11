@@ -139,6 +139,10 @@ body > header {
 	position: fixed;
 }
 
+nav {
+	pointer-events: none;
+}
+
 nav:before {
 	content:"☰";
 	font-size: 3rem;
@@ -146,6 +150,7 @@ nav:before {
 	right: 2rem;
 	top: 1.75rem;
 	cursor: pointer;
+	pointer-events: all;
 }
 
 nav ul {
@@ -153,10 +158,11 @@ nav ul {
 	width: 100vw;
 	list-style-type: none;
 	position: absolute;
-	top: 7.9rem;
+	top: 7.2rem;
 	right: 0;
 	background-color: #212121;
 	transition: 0.5s;
+	z-index: 10;
 }
 
 nav > ul > li a {
@@ -223,7 +229,10 @@ main > section > aside > header {
 	text-transform: uppercase;
 	position: relative;
 	line-height: 2.25rem;
+	z-index: 0;	
+	opacity: .99;
 }
+
 
 main > section > aside > header:after {
 	content: "";
@@ -233,6 +242,8 @@ main > section > aside > header:after {
 	position: absolute;
 	top: 8.4rem;
 	left: 2.2rem;
+	z-index: 0;
+	opacity: .99;
 }
 
 main > section > aside > form {
@@ -337,6 +348,8 @@ main > section > aside footer a{
 	color: #000;
 	text-decoration: none;
 }
+
+/* End 1 Section */
 
 
 

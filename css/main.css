@@ -229,8 +229,7 @@ main > section > aside > header {
 	text-transform: uppercase;
 	position: relative;
 	line-height: 2.25rem;
-	z-index: 0;	
-	opacity: .99;
+	z-index: -1;	
 }
 
 
@@ -242,8 +241,7 @@ main > section > aside > header:after {
 	position: absolute;
 	top: 8.4rem;
 	left: 2.2rem;
-	z-index: 0;
-	opacity: .99;
+	z-index: -1;	
 }
 
 main > section > aside > form {

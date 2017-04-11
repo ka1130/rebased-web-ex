@@ -245,6 +245,7 @@ main > section > aside > form input[type="text"]::-webkit-input-placeholder {
 	color: #666;
 	font-size: 1.5rem;
 	padding-left: 1rem;	
+	border-radius: 5px;
 }
 
 main > section > aside > form input[type="text"]::-moz-placeholder { 
@@ -253,6 +254,7 @@ main > section > aside > form input[type="text"]::-moz-placeholder {
 	color: #666;
 	font-size: 1.5rem;
 	padding-left: 1rem;	
+	border-radius: 5px;
 }
 main > section > aside > form input[type="text"]:-ms-input-placeholder { 
 	font-family: 'Roboto';
@@ -260,6 +262,7 @@ main > section > aside > form input[type="text"]:-ms-input-placeholder {
 	color: #666;
 	font-size: 1.5rem;
 	padding-left: 1rem;	
+	border-radius: 5px;
 }
 main > section > aside > form input[type="text"]:-moz-placeholder { 
 	font-family: 'Roboto';
@@ -267,6 +270,25 @@ main > section > aside > form input[type="text"]:-moz-placeholder {
 	color: #666;
 	font-size: 1.5rem;
 	padding-left: 1rem;	
+	border-radius: 5px;
+}
+
+main > section > aside > form input[type="text"]::-webkit-input-placeholder-shown { 
+	border: 3px solid #333;
+}
+
+main > section > aside > form input[type="text"]::-moz-placeholder { 
+
+}
+main > section > aside > form input[type="text"]:-ms-input-placeholder { 
+
+}
+main > section > aside > form input[type="text"]:-moz-placeholder { 
+
+}
+
+main > section > aside > form input[type="submit"] {
+
 }
 
 

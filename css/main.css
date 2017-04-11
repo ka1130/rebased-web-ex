@@ -237,39 +237,35 @@ main > section > aside > form input[type="text"] {
 	margin-top: 1rem;
 	border: none;	
 	line-height:normal;
+	font-size: 1.5rem;
+	padding-left: 1rem;
 }
 
 main > section > aside > form input[type="text"]::-webkit-input-placeholder { 
 	font-family: 'Roboto';
   font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: 1rem;	
+	color: #666;	
 	border-radius: 5px;
 }
 
 main > section > aside > form input[type="text"]::-moz-placeholder { 
 	font-family: 'Roboto';
   font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: 1rem;	
+	color: #666;	
 	border-radius: 5px;
 }
+
 main > section > aside > form input[type="text"]:-ms-input-placeholder { 
 	font-family: 'Roboto';
   font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: 1rem;	
+	color: #666;	
 	border-radius: 5px;
 }
+
 main > section > aside > form input[type="text"]:-moz-placeholder { 
 	font-family: 'Roboto';
   font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: 1rem;	
+	color: #666;	
 	border-radius: 5px;
 }
 

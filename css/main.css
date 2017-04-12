@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+ul, ol {
+	display: flex;
+	list-style-type: none
+}
+
 /* Fonts */
 
 @font-face {
@@ -314,6 +319,7 @@ main > section > aside > form input[type="text"]::-moz-placeholder {
 	padding-left: 1rem;	
 	border-radius: 5px;
 }
+
 main > section > aside > form input[type="text"]:-ms-input-placeholder { 
 	font-family: 'Roboto';
   font-weight: 100;
@@ -322,6 +328,7 @@ main > section > aside > form input[type="text"]:-ms-input-placeholder {
 	padding-left: 1rem;	
 	border-radius: 5px;
 }
+
 main > section > aside > form input[type="text"]:-moz-placeholder { 
 	font-family: 'Roboto';
   font-weight: 100;
@@ -388,6 +395,75 @@ main > section > aside + footer + p {
 }
 
 /* End 1 Section */
+
+/* Team */
+
+main > section:nth-child(2) > header {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 6rem;
+}
+
+main > section:nth-child(2) > header:after {
+	content: "";
+	width: 100px;
+	height: 8px;
+	background-color: #194fd6;
+	position: absolute;
+	top: 80px;
+	left: 150px;
+}
+
+main > section:nth-child(2) > ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+main > section:nth-child(2) > ul > li > figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 6rem;
+}
+
+main > section:nth-child(2) > ul img[src^="img/team/"] {
+	width: 280px;
+	height: auto;
+}
+
+main > section:nth-child(2) > ul figure p {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	text-transform: lowercase;
+	display: none;
+}
+
+main > section:nth-child(2) > ul figcaption span {
+	display: none;
+}
+
+main > section:nth-child(2) > ul figcaption a {
+	display: none;
+}
+
+main > section:nth-child(2) > ul figcaption {
+	font-family: 'Montserrat';
+	color: #fff;
+	font-size: 3rem;
+	margin-top: -4rem;
+	font-weight: bold;
+}
+
+/* End Team */
 
 
 

@@ -468,6 +468,18 @@ main > section:nth-child(2) > ul figcaption {
 
 /* Projects */
 
+img[src^="img/projects/"] + figcaption {
+	text-align: center;
+	color: #474747;
+	font-family: 'Roboto';
+	font-weight: 100;
+	margin: 2rem 4rem;
+}
+
+main > section:nth-child(3) > ul > li > figure {
+    margin-bottom: 0;
+}
+
 /* End Projects */
 
 

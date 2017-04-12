@@ -398,7 +398,7 @@ main > section > aside + footer + p {
 
 /* Team */
 
-main > section:nth-child(2) > header {
+main > section > header {
 	text-align: center;
 	font-family: 'Montserrat';
 	font-weight: bold;
@@ -408,7 +408,7 @@ main > section:nth-child(2) > header {
 	margin-bottom: 6rem;
 }
 
-main > section:nth-child(2) > header:after {
+main > section > header:after {
 	content: "";
 	width: 100px;
 	height: 8px;
@@ -418,7 +418,7 @@ main > section:nth-child(2) > header:after {
 	left: 150px;
 }
 
-main > section:nth-child(2) > ul {
+main > section > ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -426,7 +426,7 @@ main > section:nth-child(2) > ul {
 }
 
 
-main > section:nth-child(2) > ul > li > figure {
+main > section > ul > li > figure {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -434,7 +434,7 @@ main > section:nth-child(2) > ul > li > figure {
 	margin-bottom: 6rem;
 }
 
-main > section:nth-child(2) > ul img[src^="img/team/"] {
+main > section > ul img[src^="img/team/"] {
 	width: 280px;
 	height: auto;
 }
@@ -464,6 +464,21 @@ main > section:nth-child(2) > ul figcaption {
 }
 
 /* End Team */
+
+
+/* Projects */
+
+/* End Projects */
+
+
+/* Open-Source */
+
+/* End Open-Source */
+
+
+/* Community */
+
+/* End Community*/
 
 
 

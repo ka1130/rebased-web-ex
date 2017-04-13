@@ -188,20 +188,21 @@ nav ul {
 	width: 100%;
 	list-style-type: none;
 	position: absolute;
-	top: 7.2rem;
+	top: 5rem;
 	right: 0;
 	background-color: #212121;
 	transition: 0.5s;
 	z-index: 10;
+	flex-direction: column;
 }
 
 nav > ul > li a {
   text-decoration: none;
   color: #fff;
 	font-weight: 100;
-	margin-left: 4rem;
-	font-size: 1.8rem;
-	line-height: 250%;
+	margin-left: 2rem;
+	font-size: 1.3rem;
+	line-height: 340%;
 	visibility: hidden;
 	transition: 0.3s;
 }

@@ -10,7 +10,7 @@
     function openCloseNav(event) {
 
       if (menuList.style.height == "0px") {
-        menuList.style.height = "calc(100vh - 7.9rem)";
+        menuList.style.height = "calc(100vh - 5rem)";
         for (let i = 0; i < listItems.length; i++) {
           listItems[i].style.visibility = "visible";
         }

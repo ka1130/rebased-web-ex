@@ -412,7 +412,7 @@ main > section > header:after {
 	background-color: #194fd6;
 	position: absolute;
 	top: 80px;
-	left: 150px;
+	left: 38.5%;
 }
 
 main > section > ul {
@@ -540,8 +540,12 @@ main > section:nth-child(4) img + img {
 main > section:nth-child(4) > ul figure figcaption {
 	grid-column: 1/3;
 	grid-row: 2/3;
-	max-width: 100vw;
-	margin: 1rem auto;
+	max-width: 330px;
+	margin: 0 auto;
+}
+
+main > section:nth-child(4) > ul figure figcaption p::first-letter {
+	text-transform: capitalize;
 }
 
 main > section:nth-child(4) > ul > li:first-child figure figcaption + img {

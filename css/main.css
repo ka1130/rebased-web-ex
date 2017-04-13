@@ -613,6 +613,8 @@ main > section:nth-child(5) > ul > li:last-child figure {
 
 /* End Community*/
 
+/* Contact */
+
 main > section:nth-child(6) > header {
 	font-size: 1.8rem;
 	color: #373737;
@@ -687,12 +689,16 @@ main > section:nth-child(6) aside footer {
 	line-height: 140%;
 }
 
-
-
-/* Contact */
-
 /* End Contact */
 
+/* Footer */
 
-
+main > footer {
+	background-color: #326ED5;
+	color: #fff;
+	text-align: center;
+	height: 90px;
+	font-weight: 100;
+	padding: 1.3rem 7rem;
+}
 

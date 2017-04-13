@@ -412,7 +412,7 @@ main > section > header:after {
 	background-color: #194fd6;
 	position: absolute;
 	top: 80px;
-	left: 38.5%;
+	left: 35%;
 }
 
 main > section > ul {
@@ -607,14 +607,48 @@ main > section:nth-child(5) > ul figure {
 	margin-bottom: 2rem;
 }
 
+main > section:nth-child(5) > ul > li:last-child figure {
+	margin-bottom: 6rem;
+}
+
 /* End Community*/
 
 main > section:nth-child(6) > header {
 	font-size: 1.8rem;
 	color: #373737;
-	max-width: 300px;
+	max-width: 350px;
 	margin: 0 auto;
+	line-height: 100%;
 }
+
+main > section:nth-child(6) > header:after {
+	top: 100px;
+}
+
+main > section:nth-child(6) iframe {
+	margin: 70px 1rem 0 1rem;
+	width: calc(100% - 2rem);
+	height: 450px;
+	border: 0;
+}
+
+main > section:nth-child(6) address {
+	background: url("../img/rebased-logo-picture.png") no-repeat center 30%;
+	padding: 250px 0 0 0;
+	max-width: 165px;
+	margin: 0 auto;
+	font-style: normal;
+	font-weight: 100;
+	color: #373737;
+} 
+
+main > section:nth-child(6) address a {
+	color: #194fd6;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+
 
 /* Contact */
 

@@ -522,6 +522,7 @@ main > section:nth-child(4) > ul figure {
 
 main > section:nth-child(4) > ul >li:last-child figure {
 	border: none;
+	margin-bottom: 4rem;
 }
 
 main > section:nth-child(4) img + img {
@@ -551,21 +552,25 @@ main > section:nth-child(4) > ul figure figcaption p::first-letter {
 	text-transform: capitalize;
 }
 
-main > section:nth-child(4) > ul > li:first-child figure figcaption + img {
+main > section:nth-child(4) > ul > li:first-child figure figcaption + img,
+main > section:nth-child(4) > ul > li:last-child figure figcaption + img {
 	grid-column: 1/2;
 	grid-row: 3/4;
 	margin-left: 45%;
-	margin-right: -10%;
+	margin-right: -5%;
 }
 
-main > section:nth-child(4) > ul > li:not(:first-child) figure figcaption + img {
+main > section:nth-child(4) > ul > li:nth-child(2) figure figcaption + img,
+main > section:nth-child(4) > ul > li:nth-child(3) figure figcaption + img,
+main > section:nth-child(4) > ul > li:nth-child(4) figure figcaption + img {
 	margin: 0 auto;
 	grid-column: 1/3;
 }
 
-main > section:nth-child(4) > ul > li:first-child figure figcaption + img + img {
+main > section:nth-child(4) > ul > li:first-child figure figcaption + img + img,
+main > section:nth-child(4) > ul > li:last-child figure figcaption + img + img {
 	margin-right: 35%;
-	margin-left: -10%;
+	margin-left: -8%;
 }
 
 main > section:nth-child(4) > ul figure > img:first-of-type {
@@ -580,7 +585,40 @@ main > section:nth-child(4) > ul figure > img:first-of-type {
 
 /* Community */
 
+main > section:nth-child(5) > ul figure header {
+	font-size: 1.8rem;
+	font-family: 'Roboto', sans-serif;
+	color: #373737;
+	text-align: center;
+	margin: 2rem;
+}
+
+main > section:nth-child(5) > ul figure p {
+	text-transform: none;
+	font-size: .9rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #373737;
+	margin: 0 1rem;
+	line-height: 180%;
+}
+
+main > section:nth-child(5) > ul figure {
+	margin-bottom: 2rem;
+}
+
 /* End Community*/
+
+main > section:nth-child(6) > header {
+	font-size: 1.8rem;
+	color: #373737;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+/* Contact */
+
+/* End Contact */
 
 
 

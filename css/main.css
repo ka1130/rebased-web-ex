@@ -188,6 +188,15 @@ nav:before {
 	color: #fff;
 }
 
+.menu-active {
+	height: auto;
+	margin-top: 5rem;
+}
+
+.menu-active li a {
+	visibility: visible;
+}
+
 nav ul {
 	height: 0;
 	width: 100%;
@@ -641,6 +650,7 @@ main > section:nth-child(5) > ul figure p {
 	color: #373737;
 	margin: 0 1rem;
 	line-height: 180%;
+	padding: 0;
 }
 
 main > section:nth-child(5) > ul figure {

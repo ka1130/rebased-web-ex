@@ -325,7 +325,10 @@ main > section > aside > form input[type="text"] {
 	line-height:normal;
 }
 
-main > section > aside > form input[type="text"]::-webkit-input-placeholder { 
+main > section > aside > form input[type="text"]::-webkit-input-placeholder,
+main > section > aside > form input[type="text"]::-moz-placeholder,
+main > section > aside > form input[type="text"]:-ms-input-placeholder,
+main > section > aside > form input[type="text"]:-moz-placeholder { 
 	font-family: 'Roboto', sans-serif;
   font-weight: 100;
 	color: #666;
@@ -333,40 +336,9 @@ main > section > aside > form input[type="text"]::-webkit-input-placeholder {
 	padding-left: .5rem;	
 }
 
-main > section > aside > form input[type="text"]::-moz-placeholder { 
-	font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: .5rem;	
-}
-
-main > section > aside > form input[type="text"]:-ms-input-placeholder { 
-	font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: .5rem;	
-}
-
-main > section > aside > form input[type="text"]:-moz-placeholder { 
-	font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-	color: #666;
-	font-size: 1.5rem;
-	padding-left: .5rem;	
-}
-
-main > section > aside > form input[type="text"]::-webkit-input-placeholder-shown { 
-	border: 3px solid #333;
-}
-
-main > section > aside > form input[type="text"]::-moz-placeholder-shown { 
-	border: 3px solid #333;
-}
-main > section > aside > form input[type="text"]:-ms-input-placeholder-shown { 
-	border: 3px solid #333;
-}
+main > section > aside > form input[type="text"]::-webkit-input-placeholder-shown,
+main > section > aside > form input[type="text"]::-moz-placeholder-shown,
+main > section > aside > form input[type="text"]:-ms-input-placeholder-shown,
 main > section > aside > form input[type="text"]:-moz-placeholder-shown { 
 	border: 3px solid #333;
 }

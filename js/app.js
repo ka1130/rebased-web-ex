@@ -7,6 +7,10 @@
     const menuList = nav.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
 
+    let hamburgerStyle = window.getComputedStyle(nav, ":before");
+
+    console.dir(hamburgerStyle);
+
     function openCloseNav(event) {
 
       if (menuList.style.height == "0px") {
@@ -27,6 +31,8 @@
 
 
     // 
+
+
 
 
   });

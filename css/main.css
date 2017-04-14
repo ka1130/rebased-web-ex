@@ -183,6 +183,11 @@ nav:before {
 	pointer-events: all;
 }
 
+.hamburger-active {
+	background-color: #000;
+	color: #fff;
+}
+
 nav ul {
 	height: 0;
 	width: 100%;
@@ -251,6 +256,42 @@ main > section:first-of-type > p:nth-of-type(2){
 	font-size: 1.1rem;
 	color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+	main > section:first-child {
+		display: grid;
+	}
+
+	main > section:first-child > aside {
+		/*max-width: 35%;*/
+		/*float: right;*/
+	}
+
+	main > section:first-child > p:first-child {
+		/*max-width: 65%;*/
+		font-size: 3rem;
+		font-weight: bold;
+		/*float: left;*/
+	}
+
+	main > section:first-child > p:first-child + p {
+		/*max-width: 65%;*/
+		font-size: 2rem;
+		/*font-weight: bold;*/
+		/*float: left;*/
+	}
+
+	main > section:first-child > footer {
+		/*clear: both;
+		max-width: 35%;*/
+		font-size: .9rem;
+		/*float: right;*/
+	}
+
+	main > section:first-child > p:last-child {
+		/*clear: both;*/
+	}
+} 
 
 main > section > aside > header {
 	font-family: 'Montserrat', sans-serif;
@@ -402,18 +443,16 @@ main > section > header {
 	font-weight: bold;
 	font-size: 2.3rem;
 	text-transform: uppercase;
-	position: relative;
-	margin-bottom: 6rem;
+	margin-bottom: 2rem;
 }
 
 main > section > header:after {
 	content: "";
+	display: block;
 	width: 100px;
 	height: 8px;
 	background-color: #194fd6;
-	position: absolute;
-	top: 80px;
-	left: 35%;
+	margin: 2rem auto 0;
 }
 
 main > section > ul {
@@ -668,6 +707,7 @@ main > section:nth-child(6) aside p {
 	text-align: center;
 	margin-top: 2rem;
 	line-height: normal;
+	padding: 0 1rem;
 }
 
 main > section:nth-child(6) aside p a {

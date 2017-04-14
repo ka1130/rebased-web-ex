@@ -191,9 +191,10 @@ nav:before {
 	pointer-events: all;
 }
 
-.hamburger-active {
-	background-color: #000;
+.hamburger-active:before {
+	background-color: #212121;
 	color: #fff;
+	padding-bottom: 2rem;
 }
 
 .menu-active {
@@ -527,6 +528,7 @@ main > section > ul > li > figure {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 6rem;
+	position: relative;
 }
 
 main > section > ul img[src^="img/team/"] {
@@ -558,6 +560,33 @@ main > section:nth-child(2) > ul figcaption {
 	font-weight: bold;
 }
 
+.member-back:after {
+	background-color: #194fd6;
+	opacity: .9;
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 280px;
+	height: 280px;
+}
+
+/* Media queries for Team */
+
+@media screen and (min-width: 768px) {
+	main > section > ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 4rem;
+	}
+
+	main > section > ul > li figure {
+		margin: 2.5rem 1rem;
+	}
+}
+
+/* End media queries for Team */
+
 /* End Team */
 
 
@@ -578,6 +607,22 @@ main > section:nth-child(3) > ul > li > figure {
 main > section:nth-child(3) > ul > li:last-child > figure {
 	margin-bottom: 3rem;
 }
+
+/* Media queries for Projects */
+
+@media screen and (min-width: 768px) {
+	main > section:nth-child(3) > ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	main > section:nth-child(3) > ul > li {
+		max-width: 50%;
+	}
+}
+
+/* End media queries for Projects */
 
 /* End Projects */
 

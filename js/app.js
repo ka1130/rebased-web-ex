@@ -7,21 +7,29 @@
     const menuList = nav.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
 
-    // menuList.classList.add("menu-inactive");
-
     nav.addEventListener("click", function (event) {
       menuList.classList.toggle("menu-active");
+      nav.classList.toggle("hamburger-active");
     }, false);
 
 
-    // Change color of the hamburger on click
+    // Team memebers back
 
-    let hamburgerStyle = window.getComputedStyle(nav, ":before");
+    const membersList = Array.from(document.querySelector("main").children[1].children[1].children);
+    console.log(membersList);
 
-    console.dir(hamburgerStyle);
+    membersList.find(member => {
+      let figures = member.children[0];
+      console.log(figures);
+      member.addEventListener("click", function (event) {
+        figures.classList.toggle("member-back");
+      }, false)
+
+    });
 
 
-    // 
+
+
 
 
 

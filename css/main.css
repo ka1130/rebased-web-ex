@@ -189,8 +189,7 @@ nav:before {
 }
 
 .menu-active {
-	height: auto;
-	margin-top: 5rem;
+	height: 100vh;
 }
 
 .menu-active li a {
@@ -269,32 +268,38 @@ main > section:first-of-type > p:nth-of-type(2){
 @media screen and (min-width: 768px) {
 	main > section:first-child {
 		display: grid;
+		grid-template-columns: 65% 35%;
+		grid-template-rows: 33.3% 33.3% 33.3%;
 	}
 
 	main > section:first-child > aside {
-		/*max-width: 35%;*/
-		/*float: right;*/
+		grid-column: 2/3;
+		grid-row: 1/2;
 	}
 
 	main > section:first-child > p:first-child {
-		/*max-width: 65%;*/
 		font-size: 3rem;
 		font-weight: bold;
-		/*float: left;*/
+		grid-column: 1/2;
+		grid-row: 1/2;
+		align-self: center;
 	}
 
 	main > section:first-child > p:first-child + p {
-		/*max-width: 65%;*/
 		font-size: 2rem;
-		/*font-weight: bold;*/
-		/*float: left;*/
+		grid-column: 1/2;
+		grid-row: 1/2;
+		margin-top: 9rem;
+		align-self: center;
 	}
 
-	main > section:first-child > footer {
-		/*clear: both;
-		max-width: 35%;*/
+	main > section:first-child > aside > footer {
 		font-size: .9rem;
-		/*float: right;*/
+		color: #fff;
+	}
+
+	main > section:first-child > aside > footer a {
+		color: #fff;
 	}
 
 	main > section:first-child > p:last-child {
@@ -313,7 +318,6 @@ main > section > aside > header {
 	line-height: 120%;
 	z-index: -1;	
 }
-
 
 main > section > aside > header:after {
 	content: "";

@@ -229,7 +229,7 @@ main>section:first-of-type>p:nth-of-type(2) {
     color: #fff;
 }
 
-main>section>aside>header {
+#home>section>header {
     font-family: 'Montserrat', sans-serif;
     padding: 1.8rem 0 0 1rem;
     font-size: 1.5rem;
@@ -241,7 +241,7 @@ main>section>aside>header {
     z-index: -1;
 }
 
-main>section>aside>header:after {
+#home>section>header:after {
     content: "";
     width: 2rem;
     height: 1px;
@@ -252,11 +252,11 @@ main>section>aside>header:after {
     z-index: -1;
 }
 
-main>section>aside>form {
+#home>section>form {
     margin: 2rem 1rem 0 1rem;
 }
 
-main>section>aside>form>header {
+#home>section>form>header {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 1rem;
@@ -266,11 +266,11 @@ fieldset {
     border: none;
 }
 
-main>section>aside>form>fieldset {
+#home>section>form>fieldset {
     margin-top: 1rem;
 }
 
-main>section>aside>form input[type="text"] {
+#home>section>form input[type="text"] {
     display: block;
     width: 100%;
     height: 35px;
@@ -280,10 +280,10 @@ main>section>aside>form input[type="text"] {
     line-height: normal;
 }
 
-main>section>aside>form input[type="text"]::-webkit-input-placeholder,
-main>section>aside>form input[type="text"]::-moz-placeholder,
-main>section>aside>form input[type="text"]:-ms-input-placeholder,
-main>section>aside>form input[type="text"]:-moz-placeholder {
+#home>section>form input[type="text"]::-webkit-input-placeholder,
+#home>section>form input[type="text"]::-moz-placeholder,
+#home>section>form input[type="text"]:-ms-input-placeholder,
+#home>section>form input[type="text"]:-moz-placeholder {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: #666;
@@ -291,14 +291,14 @@ main>section>aside>form input[type="text"]:-moz-placeholder {
     padding-left: 0.5rem;
 }
 
-main>section>aside>form input[type="text"]::-webkit-input-placeholder-shown,
-main>section>aside>form input[type="text"]::-moz-placeholder-shown,
-main>section>aside>form input[type="text"]:-ms-input-placeholder-shown,
-main>section>aside>form input[type="text"]:-moz-placeholder-shown {
+#home>section>form input[type="text"]::-webkit-input-placeholder-shown,
+#home>section>form input[type="text"]::-moz-placeholder-shown,
+#home>section>form input[type="text"]:-ms-input-placeholder-shown,
+#home>section>form input[type="text"]:-moz-placeholder-shown {
     border: 3px solid #333;
 }
 
-main>section>aside>form input[type="submit"] {
+#home>section>form input[type="submit"] {
     display: block;
     width: 100%;
     height: 40px;
@@ -313,24 +313,24 @@ main>section>aside>form input[type="submit"] {
     line-height: normal;
 }
 
-main>section>aside footer {
+m#home>section footer {
     margin: 1rem 1rem 2rem 0;
     text-align: right;
     font-size: 1rem;
     line-height: 120%;
 }
 
-main>section>aside footer a {
+#home>section footer a {
     color: #000;
     text-decoration: none;
 }
 
-main>section>aside+footer {
+#home>section+footer {
     margin: 0 1rem;
     font-size: .85rem;
 }
 
-main>section>aside+footer+p {
+#home>section+footer+p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1.3rem;
@@ -454,7 +454,7 @@ main>section>ul img[src^="img/team/"] {
     height: auto;
 }
 
-main>section:nth-child(2)>ul figure p {
+#team>ul figure p {
     margin: 0;
     padding: 0;
     color: #000;
@@ -462,15 +462,15 @@ main>section:nth-child(2)>ul figure p {
     display: none;
 }
 
-main>section:nth-child(2)>ul figcaption span {
+#team>ul figcaption span {
     display: none;
 }
 
-main>section:nth-child(2)>ul figcaption a {
+#team>ul figcaption a {
     display: none;
 }
 
-main>section:nth-child(2)>ul figcaption {
+#team>ul figcaption {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 3rem;
@@ -520,11 +520,11 @@ img[src^="img/projects/"]+figcaption {
     margin: 2rem 4rem;
 }
 
-main>section:nth-child(3)>ul>li>figure {
+#projects>ul>li>figure {
     margin-bottom: 0;
 }
 
-main>section:nth-child(3)>ul>li:last-child>figure {
+#projects>ul>li:last-child>figure {
     margin-bottom: 3rem;
 }
 
@@ -532,12 +532,12 @@ main>section:nth-child(3)>ul>li:last-child>figure {
 /* Media queries for Projects */
 
 @media screen and (min-width: 768px) {
-    main>section:nth-child(3)>ul {
+    #projects>ul {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    main>section:nth-child(3)>ul>li {
+    #projects>ul>li {
         max-width: 50%;
     }
 }
@@ -551,12 +551,12 @@ main>section:nth-child(3)>ul>li:last-child>figure {
 
 /* Open-Source */
 
-main>section:nth-child(4)>ul figcaption {
+#open-source>ul figcaption {
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
-main>section:nth-child(4)>ul figcaption p {
+#open-source>ul figcaption p {
     font-family: 'Roboto', sans-serif;
     color: #000;
     font-size: 1rem;
@@ -564,21 +564,16 @@ main>section:nth-child(4)>ul figcaption p {
     text-align: center;
 }
 
-
-/*main > section:nth-child(4) > ul figure {
-	flex-direction: row;
-}*/
-
-main>section:nth-child(4)>ul img[alt*="contributor"] {
+#open-source>ul img[alt*="contributor"] {
     width: 96px;
     height: 96px;
 }
 
-main>section:nth-child(4)>ul>li {
+#open-source>ul>li {
     position: relative;
 }
 
-main>section:nth-child(4)>ul figure {
+#open-source>ul figure {
     display: grid;
     max-width: 100vw;
     padding-bottom: 3rem;
@@ -586,17 +581,17 @@ main>section:nth-child(4)>ul figure {
     margin: 0 1rem;
 }
 
-main>section:nth-child(4)>ul>li:last-child figure {
+#open-source>ul>li:last-child figure {
     border: none;
     margin-bottom: 4rem;
 }
 
-main>section:nth-child(4) img+img {
+#open-source img+img {
     grid-column: 2/3;
     grid-row: 3/4;
 }
 
-main>section:nth-child(4)>ul figure figcaption {
+#open-source>ul figure figcaption {
     grid-column: 1/3;
     grid-row: 2/3;
     max-width: 85%;
@@ -604,42 +599,42 @@ main>section:nth-child(4)>ul figure figcaption {
     color: #373737;
 }
 
-main>section:nth-child(4)>ul figure figcaption p {
+#open-source>ul figure figcaption p {
     padding: 0;
     margin-bottom: 2.3rem;
     color: #373737;
 }
 
-main>section:nth-child(4)>ul figure figcaption header {
+#open-source>ul figure figcaption header {
     font-size: 1.75rem;
 }
 
-main>section:nth-child(4)>ul figure figcaption p::first-letter {
+#open-source>ul figure figcaption p::first-letter {
     text-transform: capitalize;
 }
 
-main>section:nth-child(4)>ul>li:first-child figure figcaption+img,
-main>section:nth-child(4)>ul>li:last-child figure figcaption+img {
+#open-source>ul>li:first-child figure figcaption+img,
+#open-source>ul>li:last-child figure figcaption+img {
     grid-column: 1/2;
     grid-row: 3/4;
     margin-left: 45%;
     margin-right: -5%;
 }
 
-main>section:nth-child(4)>ul>li:nth-child(2) figure figcaption+img,
-main>section:nth-child(4)>ul>li:nth-child(3) figure figcaption+img,
-main>section:nth-child(4)>ul>li:nth-child(4) figure figcaption+img {
+#open-source>ul>li:nth-child(2) figure figcaption+img,
+#open-source>ul>li:nth-child(3) figure figcaption+img,
+#open-source>ul>li:nth-child(4) figure figcaption+img {
     margin: 0 auto;
     grid-column: 1/3;
 }
 
-main>section:nth-child(4)>ul>li:first-child figure figcaption+img+img,
-main>section:nth-child(4)>ul>li:last-child figure figcaption+img+img {
+#open-source>ul>li:first-child figure figcaption+img+img,
+#open-source>ul>li:last-child figure figcaption+img+img {
     margin-right: 35%;
     margin-left: -8%;
 }
 
-main>section:nth-child(4)>ul figure>img:first-of-type {
+#open-source>ul figure>img:first-of-type {
     grid-column: 1/3;
     width: 120px;
     height: 100px;
@@ -652,7 +647,7 @@ main>section:nth-child(4)>ul figure>img:first-of-type {
 
 /* Community */
 
-main>section:nth-child(5)>ul figure header {
+#projects>ul figure header {
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     color: #373737;
@@ -660,7 +655,7 @@ main>section:nth-child(5)>ul figure header {
     margin: 2rem;
 }
 
-main>section:nth-child(5)>ul figure p {
+#projects>ul figure p {
     text-transform: none;
     font-size: 0.9rem;
     font-family: 'Roboto', sans-serif;
@@ -671,11 +666,11 @@ main>section:nth-child(5)>ul figure p {
     padding: 0;
 }
 
-main>section:nth-child(5)>ul figure {
+#projects>ul figure {
     margin-bottom: 2rem;
 }
 
-main>section:nth-child(5)>ul>li:last-child figure {
+#projects>ul>li:last-child figure {
     margin-bottom: 6rem;
 }
 
@@ -685,7 +680,7 @@ main>section:nth-child(5)>ul>li:last-child figure {
 
 /* Contact */
 
-main>section:nth-child(6)>header {
+#contact>header {
     font-size: 1.8rem;
     color: #373737;
     max-width: 350px;
@@ -693,18 +688,18 @@ main>section:nth-child(6)>header {
     line-height: 100%;
 }
 
-main>section:nth-child(6)>header:after {
+#contact>header:after {
     top: 100px;
 }
 
-main>section:nth-child(6) iframe {
+#contact iframe {
     margin: 70px 1rem 0 1rem;
     width: calc(100% - 2rem);
     height: 450px;
     border: 0;
 }
 
-main>section:nth-child(6) address {
+#contact address {
     background: url("../img/rebased-logo-picture.png") no-repeat center 30%;
     padding: 250px 0 0 0;
     max-width: 165px;
@@ -714,7 +709,7 @@ main>section:nth-child(6) address {
     color: #373737;
 }
 
-main>section:nth-child(6) address a {
+#contact address a {
     color: #194fd6;
     text-decoration: none;
     font-weight: normal;
@@ -722,7 +717,7 @@ main>section:nth-child(6) address a {
     margin: 0.5rem 0 -0.5rem 0;
 }
 
-main>section:nth-child(6) aside header {
+#contact aside header {
     color: #24EA71;
     font-size: 1.3rem;
     text-align: center;
@@ -730,7 +725,7 @@ main>section:nth-child(6) aside header {
     padding: 0;
 }
 
-main>section:nth-child(6) aside p {
+#contact aside p {
     color: #000;
     text-transform: none;
     font-size: 1rem;
@@ -740,20 +735,20 @@ main>section:nth-child(6) aside p {
     padding: 0 1rem;
 }
 
-main>section:nth-child(6) aside p a {
+#contact aside p a {
     color: #000;
     text-decoration: none;
 }
 
-main>section:nth-child(6) aside form {
+#contact aside form {
     margin-top: 0;
 }
 
-main>section:nth-child(6) aside form>fieldset input[type="text"] {
+#contact aside form>fieldset input[type="text"] {
     border: 0.01rem solid #ddd;
 }
 
-main>section:nth-child(6) aside footer {
+#contact aside footer {
     font-size: .85rem;
     text-align: center;
     margin: 2rem 1rem;

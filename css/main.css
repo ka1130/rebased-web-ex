@@ -435,7 +435,7 @@ main>section>ul {
     align-items: center;
 }
 
-#team img[src^="img/team/"] {
+#team img {
     width: 17.5rem;
     height: auto;
 }
@@ -443,6 +443,7 @@ main>section>ul {
 #team figcaption p,
 #team figcaption footer {
     display: none;
+    transition: 0.3s;
 }
 
 #team figcaption header {
@@ -453,19 +454,60 @@ main>section>ul {
     color: #fff;
     margin-top: -4rem;
     text-align: center;
+    transition: 0.3s;
 }
 
 #team figure {
     margin-bottom: 6rem;
 }
 
-#team figure:hover:after {
+#team figure:hover figcaption {
     background-color: #194fd6;
-    content: "";
     display: block;
     width: 17.5rem;
-    height: 265px;
+    height: 17.5rem;
+    margin-top: -17.5rem;
     cursor: pointer;
+    z-index: 100;
+}
+
+#team figure:hover figcaption header {
+    font-size: 2.7rem;
+    padding-top: 8rem;
+}
+
+#team figure:hover figcaption header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0rem;
+}
+
+#team figure:hover figcaption p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    margin-top: -11.5rem;
+}
+
+#team figure:hover figcaption p,
+#team figure:hover figcaption footer {
+    display: block;
+    text-transform: none;
+    line-height: normal;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+#team figure:hover img[src^="img/team"] {
+    z-index: 0;
+    opacity: 0.1;
+}
+
+#team figure:hover figcaption footer img {
+    opacity: 1;
+    width: 3.1875rem;
+    height: auto;
+    padding-top: 6rem;
 }
 
 

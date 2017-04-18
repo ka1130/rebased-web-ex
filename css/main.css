@@ -428,72 +428,37 @@ main>section>header:after {
     margin: 2rem auto 0;
 }
 
-main>section>ul {
+#team>ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main>section>ul>li>figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 6rem;
-    position: relative;
-}
-
-main>section>ul img[src^="img/team/"] {
+#team img[src^="img/team/"] {
     width: 17.5rem;
     height: auto;
 }
 
-#team>ul figure p {
-    margin: 0;
-    padding: 0;
-    color: #000;
-    text-transform: lowercase;
+#team figcaption p,
+#team figcaption footer {
     display: none;
 }
 
-#team>ul figcaption span {
-    display: none;
-}
-
-#team>ul figcaption a {
-    display: none;
-}
-
-#team>ul figcaption {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-size: 3rem;
-    margin-top: -4rem;
-    font-weight: bold;
-}
-
-.member-back:after {
-    background-color: #194fd6;
-    opacity: .9;
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 17.5rem;
-    height: 17.5rem;
+#team figcaption header {
+    display: block;
 }
 
 
 /* Media queries for Team */
 
 @media screen and (min-width: 768px) {
-    main>section>ul {
+    #team>ul {
         flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 4rem;
     }
-    main>section>ul>li figure {
+    #team figure {
         margin: 2.5rem 1rem;
     }
 }
@@ -657,7 +622,7 @@ img[src^="img/projects/"]+figcaption {
     font-weight: 100;
     color: #373737;
     margin: 0 1rem;
-    line-height: 180%;
+    line-height: 1.62rem;
     padding: 0;
 }
 
@@ -747,7 +712,7 @@ img[src^="img/projects/"]+figcaption {
     font-size: 0.85rem;
     text-align: center;
     margin: 2rem 1rem;
-    line-height: 140%;
+    line-height: 1.2rem;
 }
 
 

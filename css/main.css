@@ -435,58 +435,61 @@ main>section>ul {
     align-items: center;
 }
 
+#team li {
+    margin: 0 1.25rem;
+}
+
 #team img {
-    width: 17.5rem;
+    width: 20rem;
     height: auto;
 }
 
 #team figcaption p,
 #team figcaption footer {
     display: none;
-    transition: 0.3s;
 }
 
 #team figcaption header {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     color: #fff;
-    margin-top: -4rem;
     text-align: center;
-    transition: 0.3s;
+    margin-top: -5.2rem;
 }
 
 #team figure {
     margin-bottom: 6rem;
 }
 
+#team figure:hover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 #team figure:hover figcaption {
     background-color: #194fd6;
-    display: block;
     width: 17.5rem;
-    height: 17.5rem;
-    margin-top: -17.5rem;
+    height: 17.6rem;
     cursor: pointer;
     z-index: 100;
 }
 
 #team figure:hover figcaption header {
     font-size: 2.7rem;
-    padding-top: 7rem;
 }
 
 #team figure:hover figcaption header p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 0rem;
 }
 
 #team figure:hover figcaption p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
-    margin-top: -10.5rem;
 }
 
 #team figure:hover figcaption p,
@@ -519,9 +522,6 @@ main>section>ul {
         flex-wrap: wrap;
         margin-bottom: 4rem;
     }
-    #team figure {
-        margin: 2.5rem 1rem;
-    }
 }
 
 
@@ -541,12 +541,20 @@ img[src^="img/projects/"]+figcaption {
     margin: 2rem 4rem;
 }
 
-#projects>ul>li>figure {
+#projects figure {
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #projects>ul>li:last-child>figure {
     margin-bottom: 3rem;
+}
+
+#projects img {
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -638,8 +646,7 @@ img[src^="img/projects/"]+figcaption {
 #open-source>ul>li:last-child figure figcaption+img {
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-left: 45%;
-    margin-right: -5%;
+    margin-left: 21vw;
 }
 
 #open-source>ul>li:nth-child(2) figure figcaption+img,
@@ -651,8 +658,7 @@ img[src^="img/projects/"]+figcaption {
 
 #open-source>ul>li:first-child figure figcaption+img+img,
 #open-source>ul>li:last-child figure figcaption+img+img {
-    margin-right: 35%;
-    margin-left: -8%;
+    margin-right: 21vw;
 }
 
 #open-source>ul figure>img:first-of-type {

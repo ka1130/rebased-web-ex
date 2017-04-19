@@ -698,7 +698,7 @@ img[src^="img/projects/"]+figcaption {
 
 /* Community */
 
-#community>ul figure header {
+#community figure header {
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
     color: #373737;
@@ -706,7 +706,7 @@ img[src^="img/projects/"]+figcaption {
     margin: 2rem;
 }
 
-#community>ul figure p {
+#community figure p {
     text-transform: none;
     font-size: 0.9rem;
     font-family: 'Roboto', sans-serif;
@@ -717,15 +717,22 @@ img[src^="img/projects/"]+figcaption {
     padding: 0;
 }
 
-#community>ul li {
-    margin-bottom: 2rem;
+#community figure {
     display: flex;
-    /*flex-direction: column;
-    justify-content: center;*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+#community li {
+    margin-bottom: 2rem;
 }
 
 #community>ul>li:last-child figure {
     margin-bottom: 6rem;
+}
+
+#community img {
+    margin: 0 auto;
 }
 
 
@@ -737,7 +744,6 @@ img[src^="img/projects/"]+figcaption {
 #contact>header {
     font-size: 1.8rem;
     color: #373737;
-    max-width: 21.875rem;
     margin: 0 auto;
     line-height: 100%;
 }
@@ -747,8 +753,8 @@ img[src^="img/projects/"]+figcaption {
 }
 
 #contact iframe {
-    margin: 4.375rem 1rem 0 1rem;
-    width: calc(100% - 2rem);
+    margin: 4.375rem 6rem 0 6rem;
+    width: calc(100% - 12rem);
     height: 28.125rem;
     border: 0;
 }

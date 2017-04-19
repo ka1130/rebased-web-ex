@@ -543,7 +543,9 @@ img[src^="img/projects/"]+figcaption {
 #open-source>ul>li:last-child figure figcaption+img {
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-left: 21vw;
+    justify-self: end;
+    margin: 0 1rem;
+    /*margin-left: 21vw;*/
     /* !!!! wtf */
 }
 
@@ -556,7 +558,7 @@ img[src^="img/projects/"]+figcaption {
 
 #open-source>ul>li:first-child figure figcaption+img+img,
 #open-source>ul>li:last-child figure figcaption+img+img {
-    margin-right: 21vw;
+    /*margin-right: 21vw;*/
     /* !!!! wtf */
 }
 

@@ -716,6 +716,9 @@ main>footer {
         background-position-x: -7rem;
         background-position-y: 2rem;
     }
+    main>section>header:after {
+        margin-bottom: 3rem;
+    }
     /* Media queries for first section */
     #home {
         display: grid;
@@ -808,6 +811,12 @@ main>footer {
     }
     /* End Media queries for Open-Source*/
     /* Media Queries for Contact */
+    #contact header:after {
+        margin-bottom: 0;
+    }
+    #contact iframe {
+        margin-top: 1rem;
+    }
     #contact address {
         max-width: 45%;
         background-position-x: 0;

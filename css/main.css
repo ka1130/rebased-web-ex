@@ -812,9 +812,37 @@ img[src^="img/projects/"]+figcaption {
 #contact aside footer {
     font-size: 0.85rem;
     text-align: center;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 4rem 1rem;
     line-height: 1.2rem;
 }
+
+
+/* Media Queries for Contact */
+
+@media screen and (min-width: 769px) {
+    #contact fieldset {
+        max-width: 90%;
+        margin: 2rem auto 0;
+    }
+    #contact input[type="text"] {
+        max-width: 20rem;
+        display: inline;
+        margin: 1.5rem 0.5rem;
+    }
+    #contact input[type="submit"] {
+        width: initial;
+        height: auto;
+        padding: 0.5rem 2rem;
+        margin: 1rem auto;
+    }
+    #contact aside footer {
+        max-width: 70%;
+        margin: 2rem auto 4rem;
+    }
+}
+
+
+/* End Media Queries for Contact */
 
 
 /* End Contact */

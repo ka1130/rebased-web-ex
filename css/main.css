@@ -823,6 +823,8 @@ img[src^="img/projects/"]+figcaption {
 /* Footer */
 
 main>footer {
+    background-image: url("../img/footer-mobile.png");
+    background-size: contain;
     background-color: #326ED5;
     color: #fff;
     text-align: center;

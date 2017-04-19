@@ -464,35 +464,46 @@ main>section>ul {
 }
 
 #team figure:hover {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 #team figure:hover figcaption {
     background-color: #194fd6;
-    width: 17.5rem;
-    height: 17.6rem;
+    width: 20rem;
+    height: 20rem;
     cursor: pointer;
     z-index: 100;
+    position: absolute;
+    top: 0.45rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #team figure:hover figcaption header {
-    font-size: 2.7rem;
+    margin: 0;
+    order: 1;
+    font-size: 4rem;
 }
 
 #team figure:hover figcaption header p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: bold;
+    margin: 0;
 }
 
 #team figure:hover figcaption p {
+    display: block;
+    text-transform: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    text-align: center;
 }
 
-#team figure:hover figcaption p,
 #team figure:hover figcaption footer {
     display: block;
     text-transform: none;
@@ -506,11 +517,15 @@ main>section>ul {
     opacity: 0.1;
 }
 
+#team figure:hover figcaption footer {
+    order: 2;
+}
+
 #team figure:hover figcaption footer img {
     opacity: 1;
     width: 3.1875rem;
     height: auto;
-    margin: 7rem 0.5rem;
+    margin: 1rem;
 }
 
 
@@ -647,6 +662,7 @@ img[src^="img/projects/"]+figcaption {
     grid-column: 1/2;
     grid-row: 3/4;
     margin-left: 21vw;
+    /* !!!! */
 }
 
 #open-source>ul>li:nth-child(2) figure figcaption+img,

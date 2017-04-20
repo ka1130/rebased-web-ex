@@ -401,6 +401,10 @@ main>section>ul {
 
 /* Projects */
 
+#projects ul {
+    display: flex;
+}
+
 #projects header {
     margin-bottom: 4rem;
 }
@@ -691,7 +695,7 @@ main>footer {
     body {
         background-size: auto;
         background-position-x: -7rem;
-        background-position-y: 2rem;
+        background-position-y: 4.5rem;
     }
     main>section>header:after {
         margin-bottom: 3rem;
@@ -859,32 +863,45 @@ main>footer {
 /* Media Queries for desktops */
 
 @media screen and (min-width: 992px) {
+    /* Media Queries for Home */
     body>header {
-        /*width: 52rem;*/
+        /*display: grid;
+        grid-template-columns: 10rem 42rem;
+        grid-template-rows: auto;*/
+        margin: 0 auto;
+    }
+    h1 img {
+        width: 9rem;
+        height: auto;
+        /*grid-column: 1/2;*/
     }
     #main {
         width: 52rem;
         margin: 0 auto;
     }
-    nav {
+    body>header>nav {
         display: flex;
+        /*grid-column: 2/3;*/
+        align-self: end;
     }
-    nav>ul {
+    body>header>nav ul {
         height: auto;
         position: static;
         background-color: transparent;
         flex-direction: row;
     }
-    nav>ul>li {
+    body>header>nav>ul>li {
         display: inline-block;
         padding: 0;
         font-size: 1.5rem;
     }
-    nav>ul>li>a {
+    body>header>nav>ul>li>a {
         color: #000;
         visibility: visible;
+        font-size: 1rem;
+        font-weight: normal;
     }
-    nav:before {
+    body>header>nav:before {
         display: none;
     }
     #home>p:first-child {
@@ -894,6 +911,45 @@ main>footer {
     #home>p:first-child+p {
         font-size: 2.1rem;
     }
+    #home>section+footer {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    /* End Media Queries for Home */
+    /* Media Queries for Team */
+    #team figure,
+    #team img,
+    #team li {
+        width: 14.5rem;
+        height: 14.6875rem;
+    }
+    #team figcaption header {
+        font-size: 2rem;
+        margin-top: -4rem;
+    }
+    #team li {
+        margin: 1.25rem;
+    }
+    /* End Media Queries for Team */
+    /* Media Queries for Projects */
+    #projects ul img {
+        width: 12.25rem;
+        height: auto;
+    }
+    #projects ul li {
+        max-width: 15rem;
+        padding: 1rem;
+    }
+    #projects ul li:first-child,
+    #projects ul li:nth-child(2),
+    #projects ul li:nth-child(4),
+    #projects ul li:nth-child(5) {
+        border-right: 0.0625rem solid #777;
+    }
+    #projects img+figcaption {
+        margin: 0;
+    }
+    /* End Media Queries for Projects */
 }
 
 

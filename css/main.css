@@ -38,20 +38,20 @@ body>header {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    z-index: 50;
+    z-index: 250;
 }
 
 nav {
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 nav:before {
-    content: "☰";
+    content: '\2630';
     font-size: 2rem;
     line-height: 5rem;
     padding: 2rem 1.5rem 0 2rem;
     cursor: pointer;
-    pointer-events: all;
+    /*pointer-events: all;*/
 }
 
 .hamburger-active:before {
@@ -68,7 +68,7 @@ nav:before {
     visibility: visible;
 }
 
-nav ul {
+body>header>nav ul {
     height: 0;
     width: 100%;
     list-style-type: none;
@@ -77,8 +77,9 @@ nav ul {
     right: 0;
     background-color: #212121;
     transition: 0.5s;
-    z-index: 10;
+    z-index: 200;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 nav>ul>li a {
@@ -116,12 +117,12 @@ main p:first-of-type {
     color: #fff;
     text-transform: uppercase;
     padding: 0 0 0.8rem 1rem;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 
 main>section:first-of-type>p:nth-of-type(2) {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0 1rem;
     font-size: 1.1rem;
     color: #fff;
@@ -131,11 +132,11 @@ main>section:first-of-type>p:nth-of-type(2) {
     font-family: 'Montserrat', sans-serif;
     padding: 1.8rem 0 0 1rem;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     position: relative;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
     z-index: -1;
 }
 
@@ -193,7 +194,7 @@ form input[type="text"]:-moz-placeholder-shown {
 form input[type="submit"] {
     display: block;
     width: 100%;
-    height: 2.5em;
+    height: 2.3em;
     border-radius: 1.875rem;
     margin-top: 1rem;
     background-color: #00EA84;
@@ -225,13 +226,13 @@ form input[type="submit"] {
 #home-claim p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin: 4rem auto;
     text-align: center;
-    line-height: 3rem;
+    line-height: 2rem;
     color: #444;
     text-transform: none;
-    padding: 0 1rem;
+    padding: 0 2.3rem;
 }
 
 
@@ -266,11 +267,13 @@ main>section>ul {
 }
 
 #team li {
-    margin: 0 1.25rem;
+    margin: 3rem 1.25rem;
+    width: 17.5rem;
+    height: 17.5rem;
 }
 
 #team img {
-    width: 20rem;
+    width: 17.5rem;
     height: auto;
 }
 
@@ -283,7 +286,7 @@ main>section>ul {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #fff;
     text-align: center;
     margin-top: -5.2rem;
@@ -308,22 +311,27 @@ main>section>ul {
 
 #team figure:hover figcaption {
     background-color: #194fd6;
-    width: 20rem;
-    height: 20rem;
+    width: 17.5rem;
+    height: 17.5rem;
     cursor: pointer;
-    z-index: 100;
+    z-index: 50;
     position: absolute;
-    top: 0.45rem;
+    top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    transition: all 0.3s;
+    /*transition: all 0.3s ease-in;*/
+    opacity: 0.85;
 }
 
 #team figure:hover figcaption header {
-    margin: 0;
-    order: 1;
-    font-size: 4rem;
+    margin: 0.9rem auto 0.3rem;
+    order: 2;
+    font-size: 2.75rem;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 #team figure:hover figcaption header p {
@@ -331,17 +339,27 @@ main>section>ul {
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 #team figure:hover figcaption p {
     display: block;
     text-transform: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
     line-height: 1.2rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding: 0 0.5rem;
     text-align: center;
+    order: 1;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 #team figure:hover figcaption footer {
@@ -350,15 +368,11 @@ main>section>ul {
     line-height: normal;
     padding: 0 0.5rem;
     text-align: center;
+    order: 3;
 }
 
 #team figure:hover img[src^="img/team"] {
     z-index: 0;
-    opacity: 0.1;
-}
-
-#team figure:hover figcaption footer {
-    order: 2;
 }
 
 #team figure:hover figcaption footer img {
@@ -543,8 +557,8 @@ img[src^="img/projects/"]+figcaption {
 }
 
 #contact iframe {
-    margin: 4.375rem 6rem 0 6rem;
-    width: calc(100% - 12rem);
+    margin: 4.375rem 1rem 0 1rem;
+    width: calc(100% - 2rem);
     height: 28.125rem;
     border: 0;
 }
@@ -653,6 +667,7 @@ main>footer {
     }
     #home>p:first-child {
         font-size: 3rem;
+        line-height: 3rem;
         font-weight: bold;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -664,6 +679,7 @@ main>footer {
         grid-row: 1/2;
         margin-top: 12rem;
         align-self: center;
+        max-width: 30rem;
     }
     #home>section>footer {
         font-size: .9rem;
@@ -684,6 +700,7 @@ main>footer {
         position: relative;
         font-size: 1.2rem;
         line-height: 1.9rem;
+        padding: 0;
     }
     #home-claim p:after,
     #home-claim p:before {

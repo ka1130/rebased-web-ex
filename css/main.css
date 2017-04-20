@@ -10,10 +10,12 @@ body {
     margin: 0 auto;
 }
 
-ul,
-ol {
-    display: flex;
-    list-style-type: none
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -22,18 +24,16 @@ ol {
 body {
     background: url("../img/header.png") no-repeat;
     background-position-y: 5rem;
-    background-size: 350%;
+    background-size: auto;
     margin: 0 auto;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    padding-top: -8rem;
-    max-width: 100vw;
 }
 
 
 /* Header */
 
 body>header {
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
     position: fixed;
     display: flex;
@@ -65,13 +65,14 @@ nav:before {
 }
 
 .menu-active li a {
+    display: block;
     visibility: visible;
 }
 
 body>header>nav ul {
+    display: flex;
     height: 0;
     width: 100%;
-    list-style-type: none;
     position: absolute;
     top: 5rem;
     right: 0;
@@ -83,7 +84,7 @@ body>header>nav ul {
 }
 
 nav>ul>li a {
-    text-decoration: none;
+    display: block;
     color: #fff;
     font-weight: 100;
     margin-left: 2rem;
@@ -137,7 +138,6 @@ main>section:first-of-type>p:nth-of-type(2) {
     text-transform: uppercase;
     position: relative;
     line-height: 1.5rem;
-    z-index: -1;
 }
 
 #home>section>header:after {
@@ -188,7 +188,7 @@ form input[type="text"]::-webkit-input-placeholder-shown,
 form input[type="text"]::-moz-placeholder-shown,
 form input[type="text"]:-ms-input-placeholder-shown,
 form input[type="text"]:-moz-placeholder-shown {
-    border: 3px solid #333;
+    border: 0.1875rem solid #333;
 }
 
 form input[type="submit"] {
@@ -215,7 +215,6 @@ form input[type="submit"] {
 
 #home>section footer a {
     color: #000;
-    text-decoration: none;
 }
 
 #home>section+footer {
@@ -294,6 +293,8 @@ main>section>ul {
 
 #team figure {
     margin-bottom: 6rem;
+    width: 17.5rem;
+    height: 17.5rem;
 }
 
 #team ul:after {
@@ -314,7 +315,6 @@ main>section>ul {
     width: 17.5rem;
     height: 17.5rem;
     cursor: pointer;
-    z-index: 50;
     position: absolute;
     top: 0;
     left: 0;
@@ -388,7 +388,7 @@ main>section>ul {
 
 /* Projects */
 
-img[src^="img/projects/"]+figcaption {
+#projects img+figcaption {
     text-align: center;
     color: #474747;
     font-family: 'Roboto', sans-serif;
@@ -575,7 +575,6 @@ img[src^="img/projects/"]+figcaption {
 
 #contact address a {
     color: #194fd6;
-    text-decoration: none;
     font-weight: normal;
     display: block;
     margin: 0.5rem 0 -0.5rem 0;
@@ -602,7 +601,6 @@ img[src^="img/projects/"]+figcaption {
 
 #contact aside p a {
     color: #000;
-    text-decoration: none;
 }
 
 #contact form {
@@ -634,7 +632,7 @@ main>footer {
     text-align: center;
     height: 5.625rem;
     font-weight: 100;
-    padding: 1.3rem 7rem;
+    padding: 1.3rem 2rem;
 }
 
 
@@ -642,6 +640,16 @@ main>footer {
 
 
 /* End site */
+
+
+/* Media Queries for orientation:portrait */
+
+@media screen and (orientation: portrait) {
+    #projects figure {}
+}
+
+
+/* End Media Queries for orientation:portrait */
 
 
 /* Media Queries for tablets */
@@ -733,6 +741,32 @@ main>footer {
         flex-wrap: wrap;
         margin-bottom: 4rem;
     }
+    #team li {
+        width: 20rem;
+        height: 20rem;
+    }
+    #team img {
+        width: 20rem;
+        height: auto;
+    }
+    #team figure {
+        width: 20rem;
+        height: 20rem;
+    }
+    #team figcaption header {
+        font-size: 3.5rem;
+    }
+    #team figure:hover figcaption {
+        width: 20rem;
+        height: 20rem;
+    }
+    #team figure:hover figcaption p {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    #team figure:hover figcaption header {
+        font-size:
+    }
     /* End media queries for Team */
     /* Media queries for Projects */
     #projects>ul {
@@ -754,7 +788,9 @@ main>footer {
         margin-bottom: 0;
     }
     #contact iframe {
-        margin-top: 1rem;
+        width: calc(100% - 20rem);
+        height: 28rem;
+        margin: 1rem 10rem;
     }
     #contact address {
         max-width: 45%;
@@ -763,8 +799,7 @@ main>footer {
         margin: 5rem auto;
     }
     #contact fieldset {
-        max-width: 90%;
-        margin: 2rem auto 0;
+        text-align: center;
     }
     #contact input[type="text"] {
         max-width: 20rem;

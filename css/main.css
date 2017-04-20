@@ -385,7 +385,7 @@ main>section>ul {
     background-color: #fff;
     width: 3.875rem;
     height: 2rem;
-    margin: -0.0625rem auto 0;
+    margin: -0.0625rem auto 5rem;
 }
 
 #team hr+div a {
@@ -400,6 +400,10 @@ main>section>ul {
 
 
 /* Projects */
+
+#projects header {
+    margin-bottom: 4rem;
+}
 
 #projects img+figcaption {
     text-align: center;
@@ -430,6 +434,10 @@ main>section>ul {
 
 
 /* Open-Source */
+
+#open-source header {
+    margin-bottom: 4rem;
+}
 
 #open-source>ul figcaption {
     font-family: 'Roboto', sans-serif;
@@ -522,6 +530,10 @@ main>section>ul {
 
 /* Community */
 
+#community header {
+    margin-bottom: 4rem;
+}
+
 #community figure header {
     font-size: 1.8rem;
     font-family: 'Roboto', sans-serif;
@@ -565,12 +577,20 @@ main>section>ul {
 
 /* Contact */
 
+#contact header {
+    font-size: 1.8rem;
+    color: #373737;
+    width: 20rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
 #contact>header:after {
     top: 6.25rem;
 }
 
 #contact iframe {
-    margin: 4.375rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
     width: calc(100% - 2rem);
     height: 28.125rem;
     border: 0;

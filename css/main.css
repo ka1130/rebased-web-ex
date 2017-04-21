@@ -868,6 +868,7 @@ main>footer {
     /* Media Queries for Home */
     body {
         background-position-x: 0;
+        background-size: contain;
     }
     h1 {
         padding-left: 0;
@@ -876,10 +877,6 @@ main>footer {
         width: 9rem;
         height: auto;
     }
-    /*#main {
-        width: 100%;
-        padding: 0 calc((100% - 52rem)/2);
-    }*/
     body>header>nav {
         display: flex;
     }

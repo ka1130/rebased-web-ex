@@ -940,16 +940,34 @@ main>footer {
     /* Media Queries for Team */
     #team figure,
     #team img,
-    #team li {
+    #team li,
+    #team figure:hover figcaption {
         width: 14.5rem;
         height: 14.6875rem;
     }
+    #team figure {
+        margin: 0;
+    }
     #team figcaption header {
         font-size: 2rem;
-        margin-top: -4rem;
     }
     #team li {
         margin: 1.25rem;
+    }
+    #team figure:hover figcaption p {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
+    #team figure:hover figcaption header {
+        font-size: 2.25rem;
+        margin-top: 0.5rem;
+    }
+    #team figure:hover figcaption header p {
+        font-size: 0.75rem;
+        margin-top: -0.3rem;
+    }
+    #team figure:hover figcaption footer img {
+        margin-top: 0.5rem;
     }
     /* End Media Queries for Team */
     /* Media Queries for Projects */

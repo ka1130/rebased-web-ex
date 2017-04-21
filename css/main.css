@@ -39,7 +39,7 @@ body>header {
     display: flex;
     justify-content: space-between;
     z-index: 250;
-    padding: 0 calc(50% - 26rem);
+    padding: 0 calc((100% - 52rem)/2);
 }
 
 nav {
@@ -866,6 +866,9 @@ main>footer {
 
 @media screen and (min-width: 992px) {
     /* Media Queries for Home */
+    h1 {
+        padding-left: 0;
+    }
     h1 img {
         width: 9rem;
         height: auto;
@@ -876,6 +879,7 @@ main>footer {
     }
     body>header>nav {
         display: flex;
+        padding-right: 1rem;
     }
     body>header>nav ul {
         height: auto;
@@ -900,13 +904,31 @@ main>footer {
     #home>p:first-child {
         font-size: 3.75rem;
         line-height: 3.75rem;
+        padding: 6rem 0 0 0;
+        align-self: start;
     }
     #home>p:first-child+p {
         font-size: 2.1rem;
+        padding: 0;
+        max-width: 100%;
+        padding-top: 2rem;
+        align-self: start;
+    }
+    #home>section>header {
+        padding: 0;
+    }
+    #home>section>header:after {
+        top: 4rem;
     }
     #home>section+footer {
         font-size: 0.8rem;
         line-height: 1.2rem;
+    }
+    #home>section>form>header {
+        font-size: 0.9rem;
+    }
+    #home-claim {
+        padding-top: 2rem;
     }
     /* End Media Queries for Home */
     /* Media Queries for Team */

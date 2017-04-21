@@ -13,19 +13,28 @@
     }, false);
 
 
-    // Team memebers back
+    // Team load more
 
-    // const membersList = Array.from(document.querySelector("main").children[1].children[1].children);
-    // console.log(membersList);
+    const arrowBtn = document.getElementById("team").children[1].nextElementSibling.nextElementSibling.children[0];
+    const teamImages = document.getElementById("team").children[1].children;
 
-    // membersList.find(member => {
-    //   let figures = member.children[0];
-    //   console.log(figures);
-    //   member.addEventListener("click", function (event) {
-    //     figures.classList.toggle("member-back");
-    //   }, false)
+    for (var i = 0; i < teamImages.length; i++) {
+      console.log(teamImages[i]);
+      if (i > 5) {
+        teamImages[i].style.display = "none";
+      }
+    }
 
-    // });
+    console.log(teamImages);
+
+    function loadMore(event) {
+      event.preventDefault();
+      console.log("ok");
+    }
+
+    arrowBtn.addEventListener("click", loadMore, false);
+
+
 
 
 

@@ -1051,6 +1051,31 @@ main>footer {
     }
     /* End Media Queries for Open Source */
     /* Media Queries for Community */
+    #community ul li {
+        margin-bottom: 6rem;
+    }
+    #community ul li:last-child {
+        margin-bottom: 0;
+    }
+    #community ul li figure {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    #community ul li figure img {
+        width: 7.5625rem;
+        height: 7.5625rem;
+    }
+    #community figure header {
+        text-align: left;
+        margin: 0 1rem;
+        font-size: 2rem;
+        color: #474747;
+        padding-left: 4rem;
+    }
+    #community figure p {
+        padding-left: 4rem;
+    }
     /* End Media Queries for Community */
     /* Media Queries for Contact */
     /* End Media Queries for Contact */

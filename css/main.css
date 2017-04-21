@@ -866,6 +866,9 @@ main>footer {
 
 @media screen and (min-width: 992px) {
     /* Media Queries for Home */
+    body {
+        background-position-x: 0;
+    }
     h1 {
         padding-left: 0;
     }
@@ -879,18 +882,21 @@ main>footer {
     }
     body>header>nav {
         display: flex;
-        padding-right: 1rem;
     }
     body>header>nav ul {
         height: auto;
-        position: static;
+        position: initial;
         background-color: transparent;
         flex-direction: row;
+        overflow-y: hidden;
     }
     body>header>nav>ul>li {
         display: inline-block;
         padding: 0;
         font-size: 1.5rem;
+    }
+    body>header>nav>ul>li a {
+        margin: 0 0.75rem;
     }
     body>header>nav>ul>li>a {
         color: #000;

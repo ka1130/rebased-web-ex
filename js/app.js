@@ -30,6 +30,12 @@
     function loadMore(event) {
       event.preventDefault();
       console.log("ok");
+      for (var i = 0; i < teamImages.length; i++) {
+        console.log(teamImages[i]);
+        if (i > 5) {
+          teamImages[i].style.display = "block";
+        }
+      }
     }
 
     arrowBtn.addEventListener("click", loadMore, false);

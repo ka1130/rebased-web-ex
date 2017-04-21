@@ -971,12 +971,20 @@ main>footer {
     }
     /* End Media Queries for Team */
     /* Media Queries for Projects */
+    #projects {
+        margin-bottom: 3rem;
+    }
+    #projects ul {
+        align-items: flex-start;
+        justify-content: center;
+    }
     #projects ul img {
         width: 12.25rem;
         height: auto;
     }
     #projects ul li {
-        max-width: 15rem;
+        width: 15.25rem;
+        height: 17.5rem;
         padding: 1rem;
     }
     #projects ul li:first-child,
@@ -984,6 +992,11 @@ main>footer {
     #projects ul li:nth-child(4),
     #projects ul li:nth-child(5) {
         border-right: 0.02rem solid #ddd;
+    }
+    #projects ul li:first-child,
+    #projects ul li:nth-child(2),
+    #projects ul li:nth-child(3) {
+        border-bottom: 0.02rem solid #ddd;
     }
     #projects img+figcaption {
         margin: 0;

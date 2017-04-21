@@ -972,7 +972,7 @@ main>footer {
     /* End Media Queries for Team */
     /* Media Queries for Projects */
     #projects {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
     #projects ul {
         align-items: flex-start;
@@ -1003,6 +1003,52 @@ main>footer {
     }
     /* End Media Queries for Projects */
     /* Media Queries for Open Source */
+    #open-source {
+        margin-bottom: 2rem;
+    }
+    #open-source ul li {
+        width: 100%;
+        height: 11.75rem;
+        position: relative;
+    }
+    #open-source ul li:after {
+        content: "";
+        display: block;
+        width: 52rem;
+        height: 0.05rem;
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        background-color: #666;
+    }
+    #open-source>ul figure>img:first-of-type,
+    #open-source>ul>li:nth-child(2) figure figcaption+img,
+    #open-source>ul>li:nth-child(3) figure figcaption+img,
+    #open-source>ul>li:nth-child(4) figure figcaption+img {
+        margin: 0;
+        flex-grow: 5;
+    }
+    #open-source>ul figure>img:first-of-type {
+        padding: 0 2rem;
+        width: auto;
+    }
+    #open-source ul li figure {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    #open-source>ul figure>figcaption header {
+        margin: 0 0 1rem 0;
+        text-align: left;
+    }
+    #open-source>ul figure>figcaption p {
+        font-size: 1.2rem;
+        font-weight: 100;
+        line-height: 1.5;
+        text-align: left;
+        flex-grow: 0;
+        text-transform: initial;
+    }
     /* End Media Queries for Open Source */
     /* Media Queries for Community */
     /* End Media Queries for Community */

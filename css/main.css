@@ -397,6 +397,16 @@ main>section>ul {
     height: 2rem;
 }
 
+.btnRotated {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+}
+
 
 /* End Team */
 
@@ -766,8 +776,8 @@ main>footer {
         content: "{";
         left: -4rem;
     }
-    /* End media queries for first section */
-    /* Media queries for Team */
+    /* End media queries for first section / tablets */
+    /* Media queries for Team / tablets */
     main>section>header {
         font-size: 3.2rem;
         color: #373737;
@@ -806,8 +816,8 @@ main>footer {
     #team figure:hover figcaption header {
         font-size:
     }
-    /* End media queries for Team */
-    /* Media queries for Projects */
+    /* End media queries for Team / tablets */
+    /* Media queries for Projects / tablets */
     #projects>ul {
         flex-direction: row;
         flex-wrap: wrap;
@@ -816,13 +826,13 @@ main>footer {
     #projects>ul>li {
         max-width: 50%;
     }
-    /* End media queries for Projects */
-    /* Media queries for Open-Source */
+    /* End media queries for Projects / tablets */
+    /* Media queries for Open-Source / tablets */
     #open-source>ul figure {
         border: none;
     }
-    /* End Media queries for Open-Source*/
-    /* Media Queries for Contact */
+    /* End Media queries for Open-Source/ tablets */
+    /* Media Queries for Contact / tablets */
     #contact header:after {
         margin-bottom: 0;
     }
@@ -855,7 +865,7 @@ main>footer {
         max-width: 70%;
         margin: 2rem auto 4rem;
     }
-    /* End Media Queries for Contact */
+    /* End Media Queries for Contact / tablets */
 }
 
 
@@ -865,7 +875,7 @@ main>footer {
 /* Media Queries for desktops */
 
 @media screen and (min-width: 992px) {
-    /* Media Queries for Home */
+    /* Media Queries for Home / desktops */
     body {
         background-position-x: 0;
         background-size: contain;
@@ -937,8 +947,8 @@ main>footer {
     #home-claim {
         padding-top: 2rem;
     }
-    /* End Media Queries for Home */
-    /* Media Queries for Team */
+    /* End Media Queries for Home / desktops */
+    /* Media Queries for Team / desktops */
     #team {
         width: 100%;
         padding: 0 calc((100% - 52rem)/2);
@@ -974,8 +984,8 @@ main>footer {
     #team figure:hover figcaption footer img {
         margin-top: 0.5rem;
     }
-    /* End Media Queries for Team */
-    /* Media Queries for Projects */
+    /* End Media Queries for Team / desktops */
+    /* Media Queries for Projects / desktops */
     #projects {
         width: 100%;
         padding: 0 calc((100% - 52rem)/2);
@@ -1010,8 +1020,8 @@ main>footer {
     #projects img+figcaption {
         margin: 0;
     }
-    /* End Media Queries for Projects */
-    /* Media Queries for Open Source */
+    /* End Media Queries for Projects / desktops */
+    /* Media Queries for Open Source / desktops */
     #open-source {
         margin-bottom: 2rem;
         width: 100%;
@@ -1060,8 +1070,8 @@ main>footer {
         flex-grow: 0;
         text-transform: initial;
     }
-    /* End Media Queries for Open Source */
-    /* Media Queries for Community */
+    /* End Media Queries for Open Source / desktops */
+    /* Media Queries for Community / desktops */
     #community {
         width: 100%;
         padding: 0 calc((100% - 52rem)/2);
@@ -1091,8 +1101,8 @@ main>footer {
     #community figure p {
         padding-left: 4rem;
     }
-    /* End Media Queries for Community */
-    /* Media Queries for Contact */
+    /* End Media Queries for Community / desktops */
+    /* Media Queries for Contact / desktops */
     #contact {
         width: 100%;
         padding: 0 calc((100% - 52rem)/2);
@@ -1126,12 +1136,12 @@ main>footer {
         padding: 12em 0 0 0;
         max-width: 100%;
     }
-    /* End Media Queries for Contact */
-    /* Media Queries for Footer */
+    /* End Media Queries for Contact / desktops */
+    /* Media Queries for Footer / desktops */
     #main>footer {
         background: url("../img/footer.png") no-repeat;
     }
-    /* End Media Queries for Footer */
+    /* End Media Queries for Footer / desktops */
 }
 
 

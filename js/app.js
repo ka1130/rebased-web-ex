@@ -19,21 +19,22 @@
     const teamImages = document.getElementById("team").children[1].children;
 
     for (var i = 0; i < teamImages.length; i++) {
-      console.log(teamImages[i]);
       if (i > 5) {
         teamImages[i].style.display = "none";
       }
     }
 
-    console.log(teamImages);
-
     function loadMore(event) {
       event.preventDefault();
-      console.log("ok");
+
       for (var i = 0; i < teamImages.length; i++) {
-        console.log(teamImages[i]);
         if (i > 5) {
-          teamImages[i].style.display = "block";
+          // teamImages[i].style.display = "list-item";
+          if (teamImages[i].style.display === "none") {
+            teamImages[i].style.display = "list-item";
+          } else {
+            teamImages[i].style.display = "none";
+          }
         }
       }
     }

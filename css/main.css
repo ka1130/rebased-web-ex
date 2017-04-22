@@ -1141,6 +1141,7 @@ main>footer {
     /* Media Queries for Footer / desktops */
     #main>footer {
         background: url("../img/footer.png") no-repeat;
+        background-size: contain;
     }
     /* End Media Queries for Footer / desktops */
 }

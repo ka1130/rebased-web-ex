@@ -26,11 +26,9 @@
 
     function loadMore(event) {
       event.preventDefault();
-      console.log(event.target);
 
       for (var i = 0; i < teamImages.length; i++) {
         if (i > 5) {
-          // teamImages[i].style.display = "list-item";
           if (teamImages[i].style.display === "none") {
             teamImages[i].style.display = "list-item";
             event.target.classList.add("btnRotated");

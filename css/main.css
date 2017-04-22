@@ -945,7 +945,8 @@ main>footer {
         font-size: 0.9rem;
     }
     #home-claim {
-        padding-top: 2rem;
+        margin-top: 2rem;
+        padding: 0 calc((100% - 52rem)/2);
     }
     /* End Media Queries for Home / desktops */
     /* Media Queries for Team / desktops */
@@ -1146,3 +1147,12 @@ main>footer {
 
 
 /* End Media Queries for desktops */
+
+
+/* Media Queries for XL-devices */
+
+
+/*@media (min-width: 1200px) {}*/
+
+
+/* End Media Queries for XL-devices */

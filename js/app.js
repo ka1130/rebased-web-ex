@@ -8,6 +8,7 @@
     const listItems = menuList.getElementsByTagName("a");
 
     nav.addEventListener("click", function (event) {
+      //add condition for small viewport here
       menuList.classList.toggle("menu-active");
       nav.classList.toggle("hamburger-active");
     }, false);
@@ -43,13 +44,7 @@
     arrowBtn.addEventListener("click", loadMore, false);
 
 
-
-
-
-
-
-
-
+    //end
 
   });
 })();

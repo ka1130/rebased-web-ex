@@ -25,26 +25,50 @@
     const arrowBtn = document.getElementById("team").children[1].nextElementSibling.nextElementSibling.children[0];
     const teamImages = document.getElementById("team").children[1].children;
 
-    for (var i = 0; i < teamImages.length; i++) {
-      if (i > 5) {
-        teamImages[i].style.display = "none";
+    if (mq.matches) {
+      for (var i = 0; i < teamImages.length; i++) {
+        if (i > 1) {
+          teamImages[i].style.display = "none";
+        }
+      }
+    } else {
+      for (var i = 0; i < teamImages.length; i++) {
+        if (i > 5) {
+          teamImages[i].style.display = "none";
+        }
       }
     }
 
     function loadMore(event) {
       event.preventDefault();
 
-      for (var i = 0; i < teamImages.length; i++) {
-        if (i > 5) {
-          if (teamImages[i].style.display === "none") {
-            teamImages[i].style.display = "list-item";
-            event.target.classList.add("btnRotated");
-          } else {
-            teamImages[i].style.display = "none";
-            event.target.classList.remove("btnRotated");
+      if (mq.matches) {
+        for (var i = 0; i < teamImages.length; i++) {
+          if (i > 1) {
+            if (teamImages[i].style.display === "none") {
+              teamImages[i].style.display = "list-item";
+              event.target.classList.add("btnRotated");
+            } else {
+              teamImages[i].style.display = "none";
+              event.target.classList.remove("btnRotated");
+            }
+          }
+        }
+      } else {
+        for (var i = 0; i < teamImages.length; i++) {
+          if (i > 5) {
+            if (teamImages[i].style.display === "none") {
+              teamImages[i].style.display = "list-item";
+              event.target.classList.add("btnRotated");
+            } else {
+              teamImages[i].style.display = "none";
+              event.target.classList.remove("btnRotated");
+            }
           }
         }
       }
+
+
     }
 
     arrowBtn.addEventListener("click", loadMore, false);

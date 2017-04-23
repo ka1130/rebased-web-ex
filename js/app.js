@@ -8,11 +8,15 @@
     const listItems = menuList.getElementsByTagName("a");
     const body = document.getElementsByTagName("body")[0];
 
+    const mq = window.matchMedia("(max-width: 991px)");
+
     nav.addEventListener("click", function (event) {
-      //add condition for small viewport here
-      menuList.classList.toggle("menu-active");
-      nav.classList.toggle("hamburger-active");
-      body.classList.toggle("noScroll");
+      if (mq.matches) {
+        menuList.classList.toggle("menu-active");
+        nav.classList.toggle("hamburger-active");
+        body.classList.toggle("noScroll");
+      }
+
     }, false);
 
 

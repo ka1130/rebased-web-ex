@@ -61,8 +61,7 @@ nav:before {
 }
 
 .menu-active {
-  height: 70vh;
-  overflow: noscroll;
+  height: 100vh;
 }
 
 .menu-active li a {
@@ -908,7 +907,13 @@ main>footer {
   body>header>nav:before {
     display: none;
   }
-  #home {
+  #home,
+  #home-claim,
+  #team,
+  #projects,
+  #open-source,
+  #community,
+  #contact {
     width: 100%;
     padding: 0 calc((100% - 52rem)/2);
   }
@@ -938,16 +943,8 @@ main>footer {
   #home>section>form>header {
     font-size: 0.9rem;
   }
-  #home-claim {
-    margin-top: 2rem;
-    padding: 0 calc((100% - 52rem)/2);
-  }
   /* End Media Queries for Home / desktops */
   /* Media Queries for Team / desktops */
-  #team {
-    width: 100%;
-    padding: 0 calc((100% - 52rem)/2);
-  }
   #team figure,
   #team img,
   #team li,
@@ -982,10 +979,6 @@ main>footer {
   /* End Media Queries for Team / desktops */
   /* Media Queries for Projects / desktops */
   #projects {
-    width: 100%;
-    padding: 0 calc((100% - 52rem)/2);
-  }
-  #projects {
     margin-bottom: 5rem;
   }
   #projects ul {
@@ -1019,8 +1012,6 @@ main>footer {
   /* Media Queries for Open Source / desktops */
   #open-source {
     margin-bottom: 2rem;
-    width: 100%;
-    padding: 0 calc((100% - 52rem)/2);
   }
   #open-source ul li {
     width: 100%;
@@ -1067,10 +1058,6 @@ main>footer {
   }
   /* End Media Queries for Open Source / desktops */
   /* Media Queries for Community / desktops */
-  #community {
-    width: 100%;
-    padding: 0 calc((100% - 52rem)/2);
-  }
   #community ul li {
     margin-bottom: 6rem;
   }
@@ -1098,10 +1085,6 @@ main>footer {
   }
   /* End Media Queries for Community / desktops */
   /* Media Queries for Contact / desktops */
-  #contact {
-    width: 100%;
-    padding: 0 calc((100% - 52rem)/2);
-  }
   #contact {
     display: grid;
   }

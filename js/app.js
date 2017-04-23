@@ -45,6 +45,23 @@
 
     arrowBtn.addEventListener("click", loadMore, false);
 
+    //Scroll animation
+    const menuLinks = $("nav li").not(":first-child, :nth-child(3)").children();
+
+    menuLinks.on("click", function (event) {
+      event.preventDefault();
+
+      let myId = $(event.target).attr("href");
+
+      $("html, body").animate({
+        scrollTop: $(myId).offset().top - 100
+      }, 500);
+
+
+    });
+
+
+
 
     //end
 

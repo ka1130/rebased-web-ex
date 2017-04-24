@@ -1152,37 +1152,13 @@ main>footer {
   body {
     background-position-y: -5rem;
   }
+  #home>section>footer,
+  #home>section>footer a {
+    color: #000;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* End Media Queries for XL-screens */
 
 
 

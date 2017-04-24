@@ -1120,7 +1120,7 @@ main>footer {
   #contact iframe+section {
     grid-column: 2/3;
     grid-row: 2/3;
-    ba justify-self: center;
+    justify-self: center;
   }
   #contact aside {
     grid-column: 1/3;

@@ -7,7 +7,6 @@
     const menuList = nav.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
     const body = document.getElementsByTagName("body")[0];
-
     const mq = window.matchMedia("(max-width: 991px)");
 
     nav.addEventListener("click", function (event) {
@@ -16,9 +15,7 @@
         nav.classList.toggle("hamburger-active");
         body.classList.toggle("noScroll");
       }
-
     }, false);
-
 
     // Team load more
 
@@ -41,9 +38,8 @@
 
     function loadMore(event) {
       event.preventDefault();
-
       if (mq.matches) {
-        for (var i = 0; i < teamImages.length; i++) {
+        for (let i = 0; i < teamImages.length; i++) {
           if (i > 1) {
             if (teamImages[i].style.display === "none") {
               teamImages[i].style.display = "list-item";
@@ -55,7 +51,7 @@
           }
         }
       } else {
-        for (var i = 0; i < teamImages.length; i++) {
+        for (let i = 0; i < teamImages.length; i++) {
           if (i > 5) {
             if (teamImages[i].style.display === "none") {
               teamImages[i].style.display = "list-item";
@@ -67,29 +63,21 @@
           }
         }
       }
-
-
     }
 
     arrowBtn.addEventListener("click", loadMore, false);
 
     //Scroll animation
+
     const menuLinks = $("nav li").not(":first-child, :nth-child(3)").children();
 
     menuLinks.on("click", function (event) {
       event.preventDefault();
-
       let myId = $(event.target).attr("href");
-
       $("html, body").animate({
         scrollTop: $(myId).offset().top - 100
       }, 500);
-
-
     });
-
-
-
 
     //end
 

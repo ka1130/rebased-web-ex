@@ -108,6 +108,30 @@ main #home {
   padding-top: 7.5rem;
 }
 
+main>section>header {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+
+main>section>header:after {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 0.5rem;
+  background-color: #194fd6;
+  margin: 2rem auto 0;
+}
+
+main>section>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #home>p:first-of-type {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
@@ -236,30 +260,6 @@ form input[type="submit"] {
 
 /* Team */
 
-main>section>header {
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 2.25rem;
-  text-transform: uppercase;
-}
-
-main>section>header:after {
-  content: "";
-  display: block;
-  width: 6.25rem;
-  height: 0.5rem;
-  background-color: #194fd6;
-  margin: 2rem auto 0;
-}
-
-main>section>ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #team li {
   margin: 3rem 1.25rem;
   width: 17.5rem;
@@ -340,6 +340,7 @@ main>section>ul {
   margin-top: 1.1rem;
   padding: 0 0.5rem;
   text-align: center;
+  color: #fff;
   order: 1;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -957,6 +958,7 @@ main>footer {
   }
   #team figcaption header {
     font-size: 2rem;
+    margin-top: -4rem;
   }
   #team li {
     margin: 1.25rem;
@@ -1115,7 +1117,7 @@ main>footer {
   #contact iframe+section {
     grid-column: 2/3;
     grid-row: 2/3;
-    justify-self: center;
+   ba justify-self: center;
   }
   #contact aside {
     grid-column: 1/3;

@@ -107,11 +107,11 @@ h1 img {
 
 /* Section 1 */
 
-main {
+main #home {
   padding-top: 7.5rem;
 }
 
-main p:first-of-type {
+#home>p:first-of-type {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: normal;
@@ -121,7 +121,7 @@ main p:first-of-type {
   line-height: 2rem;
 }
 
-main>section:first-of-type>p:nth-of-type(2) {
+#home>p:nth-of-type(2) {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding: 0 1rem;
@@ -244,7 +244,7 @@ main>section>header {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 2.25rem;
   text-transform: uppercase;
 }
 
@@ -423,18 +423,13 @@ main>section>ul {
   color: #474747;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  margin: 2rem 4rem;
+  margin: 2rem;
 }
 
 #projects figure {
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-#projects>ul>li:last-child>figure {
-  margin-bottom: 3rem;
 }
 
 #projects img {
@@ -448,7 +443,7 @@ main>section>ul {
 
 /* Open-Source */
 
-#open-source header {
+#open-source>header {
   margin-bottom: 4rem;
 }
 
@@ -593,7 +588,6 @@ main>section>ul {
 #contact header {
   font-size: 1.8rem;
   color: #373737;
-  width: 20rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -607,6 +601,7 @@ main>section>ul {
   width: calc(100% - 2rem);
   height: 28.125rem;
   border: 0;
+  overflow: hidden;
 }
 
 #contact address {
@@ -766,7 +761,7 @@ main>footer {
   /* End media queries for first section / tablets */
   /* Media queries for Team / tablets */
   main>section>header {
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: #373737;
     margin: 0 auto;
     line-height: 100%;
@@ -809,6 +804,7 @@ main>footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 4rem;
   }
   #projects>ul>li {
     max-width: 50%;
@@ -820,6 +816,9 @@ main>footer {
   }
   /* End Media queries for Open-Source/ tablets */
   /* Media Queries for Contact / tablets */
+  #contact>header {
+    font-size: 3.2rem;
+  }
   #contact header:after {
     margin-bottom: 0;
   }
@@ -865,7 +864,6 @@ main>footer {
   /* Media Queries for Home / desktops */
   body {
     background-position-x: 0;
-    background-position-y: -4rem;
     background-size: contain;
   }
   h1 {
@@ -1117,8 +1115,10 @@ main>footer {
   /* End Media Queries for Contact / desktops */
   /* Media Queries for Footer / desktops */
   #main>footer {
-    background: url("../img/footer.png") no-repeat;
+    background: url("../img/footer-mobile.png") no-repeat;
     background-size: cover;
+    padding: 2rem;
+    max-height: 5rem;
   }
   /* End Media Queries for Footer / desktops */
 }

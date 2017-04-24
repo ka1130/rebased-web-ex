@@ -7,7 +7,7 @@
     const menuList = nav.firstElementChild;
     const listItems = menuList.getElementsByTagName("a");
     const body = document.getElementsByTagName("body")[0];
-    const mq = window.matchMedia("(max-width: 991px)");
+    const mq = window.matchMedia("(max-width: 768px)");
 
     nav.addEventListener("click", function (event) {
       if (mq.matches) {

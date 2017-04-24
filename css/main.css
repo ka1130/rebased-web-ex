@@ -22,7 +22,6 @@ a {
   text-decoration: none;
 }
 
-
 /* General Rules */
 
 body {
@@ -32,7 +31,6 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
-
 
 /* Header */
 
@@ -104,7 +102,6 @@ h1 img {
   margin-top: 0.7rem;
 }
 
-
 /* Section 1 */
 
 main #home {
@@ -165,7 +162,8 @@ fieldset {
   border: none;
 }
 
-form>fieldset {
+#home form>fieldset,
+#contact form>fieldset {
   margin-top: 1rem;
 }
 
@@ -856,7 +854,6 @@ main>footer {
 }
 
 /* End Media Queries for tablets */
-
 
 /* Media Queries for desktops */
 

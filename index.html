@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Roboto:100,300,400,500,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -24,6 +25,7 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://blog.rebased.pl/" target="_new">Blog</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#community">Community</a></li>
         <li><a href="#open-source">Open Source</a></li>
         <li><a href="#team">Team</a></li>
       </ul>
@@ -31,11 +33,11 @@
   </header>
 
   <main id="main" role="main">
-    <section>
+    <section id="home">
       <p>Bullshit-free Programmers</p>
       <p>We code. And we're good at it.</p>
 
-      <aside>
+      <section>
         <header>Want us to work <br/>for you?</header>
         <form action="" method="get">
           <header>
@@ -51,11 +53,14 @@
           …or just email us at<br>
           <a href="mailto:contact@rebased.pl"><strong>contact@rebased.pl</strong></a>
         </footer>
-      </aside>
+      </section>
       <footer>
         By submitting your name and email address you allow us to use it for business purposes. Don't worry, your data is safe with
         us, we'll use it only to contact you.
       </footer>
+    </section>
+
+    <section id="home-claim">
       <p>
         Looking for top-notch Ruby and JavaScript programmers? Choose world-class developers with impressive open-source record.Choose
         direct communication over managemental overhead. Choose paying for actual work done. Cut off all the fat.
@@ -67,42 +72,43 @@
 
     <!-- Team Section -->
 
-    <section>
+    <section id="team">
       <header>The Team</header>
       <ul>
         <li>
           <figure>
             <img src="img/team/imanel.jpg" alt="Bernard Potocki">
             <figcaption>
-              Imanel
-              <span>Bernard Potocki</span>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
-                </li>
-              </ul>
+              <header>
+                Imanel
+                <p>Bernard Potocki</p>
+              </header>
+              <p>
+                Open-source contributor since high school (C++ times). Ruby and JS developer since 2008, he still maintains a massive open-source
+                portfolio.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
             </figcaption>
           </figure>
         </li>
         <li>
           <figure>
-            <p>Open-source contributor since high school (C++ times). Ruby and JS developer since 2008, he still maintains a
-              massive open-source portfolio.</p>
             <img src="img/team/tomash.jpg" alt="Tomasz Stachewicz">
             <figcaption>
-              Tomash
-              <span>Tomasz Stachewicz</span>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
-                </li>
-              </ul>
+              <header>
+                Tomash
+                <p>Tomasz Stachewicz</p>
+              </header>
+              <p>
+                Ruby developer since 2005, went pro in 2007. Likes less-popular languages, especially D. Founder of Warsaw Ruby Users Group.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
             </figcaption>
           </figure>
         </li>
@@ -110,16 +116,18 @@
           <figure>
             <img src="img/team/szot.jpg" alt="Piotr Szotkowski">
             <figcaption>
-              Chastell
-              <span>Piotr Szotkowski</span>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
-                </li>
-              </ul>
+              <header>
+                Chastell
+                <p>Piotr Szotkowski</p>
+              </header>
+              <p>
+                Professional Ruby developer for fun, assistant professor at Warsaw University of Technology by passion – or the other way
+                around. Awesome at both.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
             </figcaption>
           </figure>
         </li>
@@ -127,16 +135,18 @@
           <figure>
             <img src="img/team/zly.jpg" alt="Krzysztof Białek">
             <figcaption>
-              Zły
-              <span>Krzysztof Białek</span>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
-                </li>
-              </ul>
+              <header>
+                Zły
+                <p>Krzysztof Białek</p>
+              </header>
+              <p>
+                Psychologist who prefers working with code over other people minds. Besides Ruby he specializes in Android apps and responsive
+                CSS.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
             </figcaption>
           </figure>
         </li>
@@ -144,16 +154,18 @@
           <figure>
             <img src="img/team/sarniak.jpg" alt="Łukasz Sarnacki">
             <figcaption>
-              Sarniak
-              <span>Łukasz Sarnacki</span>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
-                </li>
-              </ul>
+              <header>
+                Sarniak
+                <p>Łukasz Sarnacki</p>
+              </header>
+              <p>
+                Ruby and Javascript professional, Łukasz likes unusual databases (Neo4j, Postgis) and contributes to Rails, Travis-CI and
+                other OS projects.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
             </figcaption>
           </figure>
         </li>
@@ -161,28 +173,289 @@
           <figure>
             <img src="img/team/turbo.jpg" alt="Katarzyna Turbiasz-Bugała">
             <figcaption>
-              Turbo
-              <span>Katarzyna Turbiasz-Bugała</span>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
-                </li>
-                <li>
-                  <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
-                </li>
-              </ul>
+              <header>
+                Turbo
+                <p>Katarzyna Turbiasz-Bugała</p>
+              </header>
+              <p>
+                Rails Girls alumnae, Katarzyna uses her years of experience as a researcher to quickly become a great Ruby developer.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
             </figcaption>
           </figure>
         </li>
-      </ul>
+        <li>
+          <figure>
+            <img src="img/team/ravbaker.jpg" alt="Ravał Piekarski">
+            <figcaption>
+              <header>
+                Ravbaker
+                <p>Ravał Piekarski</p>
+              </header>
+              <p>
+                Worked for a decade as professional rubyist, with experience including information retrieval systems, concurrent programming
+                and JRuby.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/yeti.jpg" alt="Kamil Grabowski">
+            <figcaption>
+              <header>
+                Yeti
+                <p>Kamil Grabowski</p>
+              </header>
+              <p>
+                Devops expert (Ansible, Docker) who codes in Ruby since 2008 after his share of x86 assembler, C and PHP.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/monika.jpg" alt="Monika Glier">
+            <figcaption>
+              <header>
+                Monika
+                <p>Monika Glier</p>
+              </header>
+              <p>
+                Web developer with a knack for algorithms and data structures. Judgemental about code, in a good way.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/idengager.jpg" alt="Kasia Jarmołkowicz">
+            <figcaption>
+              <header>
+                Idengager
+                <p>Kasia Jarmołkowicz</p>
+              </header>
+              <p>
+                Rails Girls organiser and activist. Switched from microbiology to microcomputer programming.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/nathell.jpg" alt="Daniel Janus">
+            <figcaption>
+              <header>
+                Nathell
+                <p>Daniel Janus</p>
+              </header>
+              <p>
+                Wrote x86 assembler in Clojure. Keeps in touch with mortals by professionally programming in Ruby and Javascript.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/martinciu.jpg" alt="Marcin Ciunelis">
+            <figcaption>
+              <header>
+                Martinciu
+                <p>Marcin Ciunelis</p>
+              </header>
+              <p>
+                Experienced Ruby developer by day, at night contributes to open-source (since 2008), blogs about coding, runs and hikes in
+                the mountains.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/k3rni.jpg" alt="Krzysztof Zych">
+            <figcaption>
+              <header>
+                K3rni
+                <p>Krzysztof Zych</p>
+              </header>
+              <p>
+                10 years of experience spanning from C to Python to Ruby, still experimenting with new languages. Undercover unix neckbeard
+                and amateur drummer.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/frey.jpg" alt="Kasia Frey">
+            <figcaption>
+              <header>
+                Frey
+                <p>Kasia Frey</p>
+              </header>
+              <p>
+                Yet another physicist in the team, she is a real frontend shieldmaiden.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/gajewsky.jpg" alt="Marcin Gajewski">
+            <figcaption>
+              <header>
+                Gajewsky
+                <p>Marcin Gajewski</p>
+              </header>
+              <p>
+                Brewer of high quality code. Likes working with big data sets and distributed architectures.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/rafal.jpg" alt="Rafał Brize">
+            <figcaption>
+              <header>
+                Rafał
+                <p>Rafał Brize</p>
+              </header>
+              <p>
+                Expert in javascript, ecommerce and integrations with even the worst kinds of APIs.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/jumski.jpg" alt="Wojciech Majewski">
+            <figcaption>
+              <header>
+                Jumski
+                <p>Wojciech Majewski</p>
+              </header>
+              <p>
+                Self-taught developer with extensive experience, great Ruby skills, soft spot for clojure and programming sound synthesizers.
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/hodor.png" alt="HodorTheCat">
+            <figcaption>
+              <header>
+                Hodor
+                <p>HodorTheCat</p>
+              </header>
+              <p>
+                Ever saw a cat contributing to open-source projects? Now you have!
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/kala.jpg" alt="Kamila Wyroślak">
+            <figcaption>
+              <header>
+                Kala
+                <p>Kamila Wyroślak</p>
+              </header>
+              <p>
+                "Programmers and programming projects are easy to take care of when you have experience with freight ships being on fire
+                in the middle of an ocean."
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="img/team/zywiec.jpg" alt="Łukasz Rzewuski">
+            <figcaption>
+              <header>
+                Żywiec
+                <p>Łukasz Rzewuski</p>
+              </header>
+              <p>
+                Bullshit Manager
+              </p>
+              <footer>
+                <a href="https://twitter.com/imanel"><img src="img/twitter.png" alt="Twitter logo"></a>
+                <a href="https://github.com/imanel"><img src="img/github.png" alt="GitHub logo"></a>
+              </footer>
+            </figcaption>
+          </figure>
+        </li>
 
+      </ul>
+      <hr>
+      <div>
+        <a href="#"></a>
+      </div>
     </section>
 
     <!--End Team Section -->
 
     <!-- Projects Section -->
 
-    <section>
+    <section id="projects">
       <header>Projects</header>
       <ul>
         <li>
@@ -240,7 +513,7 @@
 
     <!-- Open Source Section -->
 
-    <section>
+    <section id="open-source">
       <header>Open Source</header>
       <ul>
         <li>
@@ -312,7 +585,7 @@
 
     <!-- Community Section -->
 
-    <section>
+    <section id="community">
       <header>Community</header>
       <ul>
         <li>
@@ -361,10 +634,10 @@
 
     <!-- Contact Section -->
 
-    <section>
+    <section id="contact">
       <header>Now We Can Work With You.</header>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.2288164136144!2d20.972194751541778!3d52.275547761969406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecbe828dc40e7%3A0x67482481058b998e!2sEdwarda+Jelinka+48%2C+Warszawa!5e0!3m2!1spl!2spl!4v1491384136543"
-        frameborder="0" allowfullscreen>
+        frameborder="0" scrolling="no" allowfullscreen>
       </iframe>
       <section>
         <address>
@@ -401,6 +674,7 @@
       Copyright <strong>Rebased</strong> ‘2017. All rights reserved
     </footer>
   </main>
+  <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 

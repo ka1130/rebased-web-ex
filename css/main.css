@@ -996,8 +996,8 @@ main>footer {
   }
   #projects ul li {
     width: 15.25rem;
-    height: 17.5rem;
-    padding: 1rem;
+    height: 20rem;
+    padding: 2rem;
   }
   #projects ul li:first-child,
   #projects ul li:nth-child(2),
@@ -1011,7 +1011,7 @@ main>footer {
     border-bottom: 0.02rem solid #ddd;
   }
   #projects img+figcaption {
-    margin: 0;
+    margin: 2rem 0 0 0;
   }
 
   /* End Media Queries for Projects / desktops */
@@ -1145,3 +1145,44 @@ main>footer {
 }
 
 /* End Media Queries for desktops */
+
+/* Media Queries for XL-screens */
+
+@media (min-width: 1200px) {  
+  body {
+    background-position-y: -5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

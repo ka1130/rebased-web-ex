@@ -865,8 +865,7 @@ main>footer {
     margin: 1rem auto;
   }
   #contact aside footer {
-    max-width: 70%;
-    /* tu też problem */
+    max-width: 36rem;
     margin: 2rem auto 4rem;
   }
   /* End Media Queries for Contact / tablets */

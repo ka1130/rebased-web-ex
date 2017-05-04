@@ -10,10 +10,6 @@ body {
   margin: 0 auto;
 }
 
-body.noScroll {
-  overflow: hidden;
-}
-
 ul {
   list-style-type: none;
 }
@@ -54,17 +50,21 @@ nav:before {
   cursor: pointer;
 }
 
-.hamburger-active:before {
+body.menu-active {
+  overflow: hidden;
+}
+
+body.menu-active #main-nav ul {
+  height: 100vh;
+}
+
+body.menu-active #main-nav:before {
   background-color: #212121;
   color: #fff;
   padding-bottom: 2rem;
 }
 
-.menu-active {
-  height: 100vh;
-}
-
-.menu-active li a {
+body.menu-active li a {
   display: block;
   visibility: visible;
 }
@@ -259,7 +259,9 @@ form input[type="submit"] {
   padding: 0 2.3rem;
 }
 
+
 /* End 1 Section */
+
 
 /* Team */
 
@@ -387,14 +389,18 @@ form input[type="submit"] {
   margin: -0.0625rem auto 5rem;
 }
 
-#team hr+div a {
+#show-more {
   background: url("../img/more-button.png") no-repeat;
   display: block;
   width: 3.875rem;
   height: 2rem;
 }
 
-.btnRotated {
+.team-active .member-hidden {
+  display: block;
+}
+
+.team-active #show-more {
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -404,7 +410,13 @@ form input[type="submit"] {
   -ms-transform-origin: top center;
 }
 
+.member-hidden {
+  display: none;
+}
+
+
 /* End Team */
+
 
 /* Projects */
 
@@ -435,7 +447,9 @@ form input[type="submit"] {
   text-align: center;
 }
 
+
 /* End Projects */
+
 
 /* Open-Source */
 
@@ -528,7 +542,9 @@ form input[type="submit"] {
   margin: 0 auto;
 }
 
+
 /* End Open-Source */
+
 
 /* Community */
 
@@ -573,7 +589,9 @@ form input[type="submit"] {
   margin: 0 auto;
 }
 
+
 /* End Community*/
+
 
 /* Contact */
 
@@ -651,7 +669,9 @@ form input[type="submit"] {
   line-height: 1.2rem;
 }
 
+
 /* End Contact */
+
 
 /* Footer */
 
@@ -666,9 +686,12 @@ main>footer {
   padding: 1.3rem 2rem;
 }
 
+
 /* End Footer */
 
+
 /* End site */
+
 
 /* Media Queries for tablets */
 
@@ -681,9 +704,7 @@ main>footer {
   main>section>header:after {
     margin-bottom: 3rem;
   }
-
   /* Media queries for first section */
-
   #home {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -747,11 +768,8 @@ main>footer {
     content: "{";
     left: -4rem;
   }
-
   /* End media queries for first section / tablets */
-
   /* Media queries for Team / tablets */
-
   main>section>header {
     font-size: 3rem;
     color: #373737;
@@ -790,11 +808,8 @@ main>footer {
   #team figure:hover figcaption header {
     font-size:
   }
-
   /* End media queries for Team / tablets */
-
   /* Media queries for Projects / tablets */
-
   #projects>ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -804,19 +819,13 @@ main>footer {
   #projects>ul>li {
     max-width: 50%;
   }
-
   /* End media queries for Projects / tablets */
-
   /* Media queries for Open-Source / tablets */
-
   #open-source>ul figure {
     border: none;
   }
-
   /* End Media queries for Open-Source/ tablets */
-
   /* Media Queries for Contact / tablets */
-
   #contact>header {
     font-size: 3.2rem;
   }
@@ -852,19 +861,17 @@ main>footer {
     max-width: 70%;
     margin: 2rem auto 4rem;
   }
-
   /* End Media Queries for Contact / tablets */
-
 }
 
+
 /* End Media Queries for tablets */
+
 
 /* Media Queries for desktops */
 
 @media screen and (min-width: 992px) {
-
   /* Media Queries for Home / desktops */
-
   body {
     background-position-x: 0;
     background-size: contain;
@@ -944,11 +951,8 @@ main>footer {
   #home>section>form>header {
     font-size: 0.9rem;
   }
-
   /* End Media Queries for Home / desktops */
-
   /* Media Queries for Team / desktops */
-
   #team figure,
   #team img,
   #team li,
@@ -981,11 +985,8 @@ main>footer {
   #team figure:hover figcaption footer img {
     margin-top: 0.5rem;
   }
-
   /* End Media Queries for Team / desktops */
-
   /* Media Queries for Projects / desktops */
-
   #projects {
     margin-bottom: 5rem;
   }
@@ -1016,11 +1017,8 @@ main>footer {
   #projects img+figcaption {
     margin: 2rem 0 0 0;
   }
-
   /* End Media Queries for Projects / desktops */
-
   /* Media Queries for Open Source / desktops */
-
   #open-source {
     margin-bottom: 2rem;
   }
@@ -1067,11 +1065,8 @@ main>footer {
     flex-grow: 0;
     text-transform: initial;
   }
-
   /* End Media Queries for Open Source / desktops */
-
   /* Media Queries for Community / desktops */
-
   #community ul li {
     margin-bottom: 6rem;
   }
@@ -1097,11 +1092,8 @@ main>footer {
   #community figure p {
     padding-left: 4rem;
   }
-
   /* End Media Queries for Community / desktops */
-
   /* Media Queries for Contact / desktops */
-
   #contact {
     display: grid;
   }
@@ -1131,23 +1123,20 @@ main>footer {
     padding: 12em 0 0 0;
     max-width: 100%;
   }
-
   /* End Media Queries for Contact / desktops */
-
   /* Media Queries for Footer / desktops */
-
   #main>footer {
     background: url("../img/footer-mobile.png") no-repeat;
     background-size: cover;
     padding: 2rem;
     max-height: 5rem;
   }
-
   /* End Media Queries for Footer / desktops */
-
 }
 
+
 /* End Media Queries for desktops */
+
 
 /* Media Queries for XL-screens */
 
@@ -1160,5 +1149,6 @@ main>footer {
     color: #000;
   }
 }
+
 
 /* End Media Queries for XL-screens */

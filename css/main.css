@@ -168,7 +168,7 @@ main>section>ul {
 #home>section>header:after {
   content: "";
   width: 2rem;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #fff;
   position: absolute;
   top: 6rem;
@@ -613,15 +613,15 @@ form input[type="submit"] {
 #contact iframe {
   margin: 1rem 1rem 0 1rem;
   width: calc(100% - 2rem);
-  height: 28.125rem;
+  height: 28rem;
   border: 0;
   overflow: hidden;
 }
 
 #contact address {
   background: url("../img/rebased-logo-picture.png") no-repeat center 30%;
-  padding: 15.625rem 0 0 0;
-  max-width: 10.3125rem;
+  padding: 15rem 0 0 0;
+  max-width: 10rem;
   margin: 0 auto;
   font-style: normal;
   font-weight: 100;
@@ -699,7 +699,7 @@ main>footer {
 
 /* Media Queries for tablets */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
   body {
     background-size: auto;
     background-position-x: -7rem;
@@ -749,6 +749,7 @@ main>footer {
   }
   #home-claim p {
     max-width: 78%;
+    /*tu padding!*/
     margin: 4rem auto;
     position: relative;
     font-size: 1.2rem;
@@ -809,9 +810,6 @@ main>footer {
     font-size: 1.1rem;
     margin-top: 2rem;
   }
-  #team figure:hover figcaption header {
-    font-size:
-  }
   .member-hidden-xs {
     display: block;
   }
@@ -825,6 +823,7 @@ main>footer {
   }
   #projects>ul>li {
     max-width: 50%;
+    /* tu padding! */
   }
   /* End media queries for Projects / tablets */
   /* Media queries for Open-Source / tablets */
@@ -846,6 +845,7 @@ main>footer {
   }
   #contact address {
     max-width: 45%;
+    /* tu padding! */
     background-position-x: 0;
     padding: 0 0 0 11rem;
     margin: 5rem auto;
@@ -866,6 +866,7 @@ main>footer {
   }
   #contact aside footer {
     max-width: 70%;
+    /* tu też problem */
     margin: 2rem auto 4rem;
   }
   /* End Media Queries for Contact / tablets */
@@ -877,7 +878,7 @@ main>footer {
 
 /* Media Queries for desktops */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   /* Media Queries for Home / desktops */
   body {
     background-position-x: 0;
@@ -966,6 +967,7 @@ main>footer {
   #team figure:hover figcaption {
     width: 14.5rem;
     height: 14.6875rem;
+    /* czerwona lampka! */
   }
   #team figure {
     margin: 0;
@@ -1014,12 +1016,12 @@ main>footer {
   #projects ul li:nth-child(2),
   #projects ul li:nth-child(4),
   #projects ul li:nth-child(5) {
-    border-right: 0.02rem solid #ddd;
+    border-right: 0.625rem solid #ddd;
   }
   #projects ul li:first-child,
   #projects ul li:nth-child(2),
   #projects ul li:nth-child(3) {
-    border-bottom: 0.02rem solid #ddd;
+    border-bottom: 0.625rem solid #ddd;
   }
   #projects img+figcaption {
     margin: 2rem 0 0 0;
@@ -1147,7 +1149,7 @@ main>footer {
 
 /* Media Queries for XL-screens */
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   body {
     background-position-y: -5rem;
   }

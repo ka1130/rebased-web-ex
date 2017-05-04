@@ -748,8 +748,7 @@ main>footer {
     grid-column: 2/3;
   }
   #home-claim p {
-    max-width: 78%;
-    /*tu padding!*/
+    max-width: 40rem;
     margin: 4rem auto;
     position: relative;
     font-size: 1.2rem;
@@ -823,12 +822,14 @@ main>footer {
   }
   #projects>ul>li {
     max-width: 50%;
-    /* tu padding! */
   }
   /* End media queries for Projects / tablets */
   /* Media queries for Open-Source / tablets */
   #open-source>ul figure {
     border: none;
+  }
+  #open-source>ul li:last-child:after {
+    content: none;
   }
   /* End Media queries for Open-Source/ tablets */
   /* Media Queries for Contact / tablets */
@@ -844,8 +845,7 @@ main>footer {
     margin: 1rem 10rem;
   }
   #contact address {
-    max-width: 45%;
-    /* tu padding! */
+    max-width: 10rem;
     background-position-x: 0;
     padding: 0 0 0 11rem;
     margin: 5rem auto;

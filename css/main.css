@@ -396,7 +396,7 @@ form input[type="submit"] {
   height: 2rem;
 }
 
-.team-active .member-hidden {
+.team-active .member-hidden-sm {
   display: block;
 }
 
@@ -410,7 +410,11 @@ form input[type="submit"] {
   -ms-transform-origin: top center;
 }
 
-.member-hidden {
+.member-hidden-xs {
+  display: none;
+}
+
+.member-hidden-sm {
   display: none;
 }
 
@@ -807,6 +811,9 @@ main>footer {
   }
   #team figure:hover figcaption header {
     font-size:
+  }
+  .member-hidden-xs {
+    display: block;
   }
   /* End media queries for Team / tablets */
   /* Media queries for Projects / tablets */

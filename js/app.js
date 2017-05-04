@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Hamburger Menu
 
   document.querySelector("#main-nav").addEventListener("click", function (event) {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      document.querySelector("body").classList.toggle("menu-active");
-    }
+    document.querySelector("body").classList.toggle("menu-active");
   }, false);
 
   // Team load more

@@ -89,7 +89,7 @@ nav>ul>li a {
   font-weight: 100;
   margin-left: 2rem;
   font-size: 1.3rem;
-  line-height: 4.42rem;
+  line-height: 4.4rem;
   visibility: hidden;
   transition: 0.3s;
 }
@@ -115,14 +115,14 @@ main>section>header {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
 }
 
 main>section>header:after {
   content: "";
   display: block;
-  width: 6.25rem;
+  width: 6.2rem;
   height: 0.5rem;
   background-color: #194fd6;
   margin: 2rem auto 0;
@@ -197,9 +197,9 @@ fieldset {
 form input[type="text"] {
   display: block;
   width: 100%;
-  height: 2.1875rem;
-  border-radius: 0.1875rem;
-  margin-top: 0.75rem;
+  height: 2.2rem;
+  border-radius: 0.2rem;
+  margin-top: 0.7rem;
   border: none;
   line-height: normal;
   font-family: 'Roboto', sans-serif;
@@ -219,7 +219,7 @@ form input[type="text"]:-moz-placeholder-shown {
 form input[type="submit"] {
   display: block;
   width: 100%;
-  height: 2.3em;
+  height: 2.3rem;
   border-radius: 1.875rem;
   margin-top: 1rem;
   background-color: #00EA84;
@@ -244,13 +244,13 @@ form input[type="submit"] {
 
 #home>section+footer {
   margin: 0 1rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 #home-claim p {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 4rem auto;
   text-align: center;
   line-height: 2rem;
@@ -317,7 +317,7 @@ form input[type="submit"] {
 #team figure:hover figcaption header {
   margin: 0.6rem auto 0.3rem;
   order: 2;
-  font-size: 2.75rem;
+  font-size: 2.7rem;
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
@@ -368,7 +368,7 @@ form input[type="submit"] {
 
 #team figure:hover figcaption footer img {
   opacity: 1;
-  width: 3.1875rem;
+  width: 3.2rem;
   height: auto;
   margin: 1rem;
 }
@@ -392,7 +392,7 @@ form input[type="submit"] {
 #show-more {
   background: url("../img/more-button.png") no-repeat;
   display: block;
-  width: 3.875rem;
+  width: 3.8rem;
   height: 2rem;
 }
 
@@ -571,7 +571,7 @@ form input[type="submit"] {
   font-weight: 100;
   color: #373737;
   margin: 0 1rem;
-  line-height: 1.62rem;
+  line-height: 1.6rem;
   padding: 0;
 }
 
@@ -685,7 +685,7 @@ main>footer {
   background-color: #326ED5;
   color: #fff;
   text-align: center;
-  height: 5.625rem;
+  height: 5.6rem;
   font-weight: 100;
   padding: 1.3rem 2rem;
 }
@@ -907,7 +907,7 @@ main>footer {
     font-size: 1.5rem;
   }
   body>header>nav>ul>li a {
-    padding: 0 0.75rem;
+    padding: 0 0.8rem;
     margin: 0;
   }
   body>header>nav>ul>li a:hover {
@@ -934,8 +934,8 @@ main>footer {
     padding: 0 calc((100% - 52rem)/2);
   }
   #home>p:first-child {
-    font-size: 3.75rem;
-    line-height: 3.75rem;
+    font-size: 3.7rem;
+    line-height: 3.7rem;
     padding: 6rem 0 0 0;
     align-self: start;
   }
@@ -966,8 +966,7 @@ main>footer {
   #team li,
   #team figure:hover figcaption {
     width: 14.5rem;
-    height: 14.6875rem;
-    /* czerwona lampka! */
+    height: 14.7rem;
   }
   #team figure {
     margin: 0;
@@ -980,15 +979,15 @@ main>footer {
     margin: 1.25rem;
   }
   #team figure:hover figcaption p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-top: 0.5rem;
   }
   #team figure:hover figcaption header {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     margin-top: 0.5rem;
   }
   #team figure:hover figcaption header p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-top: -0.3rem;
   }
   #team figure:hover figcaption footer img {
@@ -1008,7 +1007,7 @@ main>footer {
     height: auto;
   }
   #projects ul li {
-    width: 15.25rem;
+    width: 15.2rem;
     height: 20rem;
     padding: 2rem;
   }
@@ -1016,12 +1015,12 @@ main>footer {
   #projects ul li:nth-child(2),
   #projects ul li:nth-child(4),
   #projects ul li:nth-child(5) {
-    border-right: 0.625rem solid #ddd;
+    border-right: 0.0625rem solid #ddd;
   }
   #projects ul li:first-child,
   #projects ul li:nth-child(2),
   #projects ul li:nth-child(3) {
-    border-bottom: 0.625rem solid #ddd;
+    border-bottom: 0.0625rem solid #ddd;
   }
   #projects img+figcaption {
     margin: 2rem 0 0 0;
@@ -1033,7 +1032,7 @@ main>footer {
   }
   #open-source ul li {
     width: 100%;
-    height: 11.75rem;
+    height: 11.7rem;
     position: relative;
   }
   #open-source ul li:after {
@@ -1088,8 +1087,8 @@ main>footer {
     align-items: center;
   }
   #community ul li figure img {
-    width: 7.5625rem;
-    height: 7.5625rem;
+    width: 7.6rem;
+    height: 7.6rem;
   }
   #community figure header {
     text-align: left;
